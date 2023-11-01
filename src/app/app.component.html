@@ -13,11 +13,11 @@
         class="navbar-toggler"
         type="button"
         (click)="centered.toggle()"
-        aria-controls="navbarCenteredExample"
+        aria-controls="navbarCentered"
         aria-expanded="false"
         aria-label="Toggle navigation"
       >
-        <i class="fas fa-bars"></i>
+        <mat-icon>menu</mat-icon>
       </button>
 
       <div class="collapse navbar-collapse justify-content-left ms-5">
@@ -30,7 +30,7 @@
         </ul>
       </div>
 
-      <div class="collapse navbar-collapse justify-content-center me-5" id="navbarCenteredExample" mdbCollapse #centered="mdbCollapse">
+      <div class="collapse navbar-collapse justify-content-left me-5" id="navbarCentered" mdbCollapse #centered="mdbCollapse">
         <ul class="navbar-nav mb-2 mb-lg-0">
           <li class="nav-item">
             <a class="nav-link" href="#aboutme">About Me</a>
@@ -48,21 +48,19 @@
             <a class="nav-link" href="#">Contact</a>
           </li>
         </ul>
+        <ul class="navbar-nav mb-2 mb-lg-0 ms-5">
+          <li class="nav-item">
+            <a href="https://www.linkedin.com/in/rui-barreto-814071248/" target="_blank">
+              <img src="../assets/icons/linkedin.svg.png">
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="https://github.com/ruib07" target="_blank">
+              <img src="../assets/icons/github.svg">
+            </a>
+          </li>
+        </ul>
       </div>
-    </div>
-    <div class="collapse navbar-collapse justify-content-right me-5">
-      <ul class="navbar-nav mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a href="https://www.linkedin.com/in/rui-barreto-814071248/" target="_blank">
-            <img src="../assets/icons/linkedin.svg.png">
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="https://github.com/ruib07" target="_blank">
-            <img src="../assets/icons/github.svg">
-          </a>
-        </li>
-      </ul>
     </div>
   </nav>
   <br><br><br>
