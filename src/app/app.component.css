@@ -1,0 +1,168 @@
+.nav-item-logo img {
+  width:100px;
+}
+
+.nav-link {
+  font-size: 20px;
+  font-weight: lighter;
+}
+
+.nav-item img {
+  width: 30px;
+  margin: 6px 6px 6px 6px;
+}
+
+.intro-container {
+  padding: 80px;
+}
+
+.intro-title {
+  font-size: 60px;
+  color: rgba(116,127,224,.65);
+}
+
+.blinking {
+  width: 20px;
+  height: 70px;
+  background-color: rgba(116,127,224,.65);
+  -webkit-animation: blinking 1s infinite;
+  animation: blinking 1s infinite;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+@keyframes blinking {
+  0% {
+      background-color: transparent;
+  }
+  49% {
+      background-color: transparent
+  }
+  50% {
+      background-color: rgba(116,127,224,.65);
+  }
+}
+
+.resume {
+  margin-top: -100px;
+  padding: 80px;
+}
+
+.about-me {
+  font-weight: lighter;
+  font-size: 18px;
+}
+
+.about-me b {
+  color: rgba(116,127,224,.65);
+}
+
+.experience-container {
+  margin-top: -80px;
+  padding: 80px;
+  margin-left: 20px;
+}
+
+.experience-header {
+  color: rgba(116,127,224,.65);
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.experience {
+  margin-bottom: 20px;
+}
+
+.experience-title {
+  color: rgba(116,127,224,.65);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.experience-date {
+  color: rgba(116,127,224,.65);
+  font-size: 14px;
+  font-weight: bold;
+  float: right;
+}
+
+.experience-location {
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+.experience-desc {
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+.education-container {
+  margin-top: -90px;
+  padding: 80px;
+  margin-left: 20px;
+}
+
+.education-header {
+  color: rgba(116,127,224,.65);
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.education {
+  margin-bottom: 20px;
+}
+
+.education-title {
+  color: rgba(116,127,224,.65);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.education-date {
+  color: rgba(116,127,224,.65);
+  font-size: 14px;
+  font-weight: bold;
+  float: right;
+}
+
+.education-location {
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+.education-desc {
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+.skills {
+  max-width: 68.75rem;
+  margin: auto;
+  text-align: center;
+  margin-top: 2.5rem;
+}
+
+.skill-header {
+  margin-bottom: 1rem;
+}
+
+.skills-wrapper img {
+  padding: 1.25rem;
+  width:150px;
+  height:150px;
+}
+
+.icon {
+  width: 11.875rem;
+  height: 11.25rem;
+}
+
+.icon-card {
+  background-color: #fff;
+  border-radius: 11px;
+  box-shadow: 5px 5px 5px lightgray;
+  padding: 20px;
+  margin: 10px;
+}
