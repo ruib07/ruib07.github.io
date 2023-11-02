@@ -1,0 +1,59 @@
+<!-- NAVBAR -->
+<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light" style="background-color: #fff!important;">
+  <div class="container-fluid">
+    <button
+      class="navbar-toggler"
+      type="button"
+      (click)="centered.toggle()"
+      aria-controls="navbarCentered"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <mat-icon>menu</mat-icon>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-left ms-5">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <li class="nav-item-logo">
+          <a href="#start">
+            <img src="../assets/icons/rb-logo.png">
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="collapse navbar-collapse justify-content-left me-5" id="navbarCentered" mdbCollapse #centered="mdbCollapse">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="#start">About Me</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#experienceeducation">Experience & Education</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#skills">Skills</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#projects">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+      </ul>
+      <ul class="navbar-nav mb-2 mb-lg-0 ms-5">
+        <li class="nav-item">
+          <a href="https://www.linkedin.com/in/rui-barreto-814071248/" target="_blank">
+            <img src="../assets/icons/linkedin.svg.png">
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="https://github.com/ruib07" target="_blank">
+            <img src="../assets/icons/github.svg">
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<br><br><br>
+<!-- END OF NAVBAR -->
