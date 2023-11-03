@@ -3,14 +3,26 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import {MatIconModule} from '@angular/material/icon';
 import { MdbCollapseModule } from 'mdb-angular-ui-kit/collapse';
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+
+import { AppRoutingModule } from './app-routing.module';
+
+import { AppComponent } from './app.component';
 import { NavbarComponent } from 'src/shared/navbar/navbar.component';
+import { AboutmeComponent } from 'src/components/aboutme/aboutme.component';
+import { ExperienceeducationComponent } from 'src/components/experienceeducation/experienceeducation.component';
+import { SkillsComponent } from 'src/components/skills/skills.component';
+import { ProjectsComponent } from 'src/components/projects/projects.component';
+import { ContactComponent } from 'src/components/contact/contact.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    AboutmeComponent,
+    ExperienceeducationComponent,
+    SkillsComponent,
+    ProjectsComponent,
+    ContactComponent,
     NavbarComponent
    ],
   imports: [

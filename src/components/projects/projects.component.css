@@ -1,0 +1,52 @@
+.projects-container {
+  max-width: 68.75rem;
+  margin: auto;
+  margin-top: 2.5rem;
+}
+
+.header {
+  text-align: center;
+}
+
+.projects-header {
+  font-weight: bold;
+  color: rgba(116,127,224,.65);
+}
+
+.hr-projects {
+  display: inline-flex;
+  padding: 20px;
+  border-top: 5px solid;
+}
+
+.card {
+  width: 100%;
+  max-width: 900px;
+  margin: auto;
+  flex-direction: row;
+  box-shadow: 5px 5px 5px lightgray;
+}
+
+.card a img {
+  width: 25px;
+}
+
+.card img {
+  width: 50%;
+}
+
+.card-title {
+  font-weight: bold;
+  color: rgba(116,127,224,.65);
+  margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 768px){
+  .card img {
+    display: none;
+  }
+}
+
+.card-text {
+  font-weight: lighter;
+}

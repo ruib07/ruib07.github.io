@@ -1,0 +1,44 @@
+.intro-container {
+  padding: 80px;
+}
+
+.intro-title {
+  font-size: 60px;
+  color: rgba(116,127,224,.65);
+}
+
+.blinking {
+  width: 20px;
+  height: 70px;
+  background-color: rgba(116,127,224,.65);
+  -webkit-animation: blinking 1s infinite;
+  animation: blinking 1s infinite;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+@keyframes blinking {
+  0% {
+      background-color: transparent;
+  }
+  49% {
+      background-color: transparent
+  }
+  50% {
+      background-color: rgba(116,127,224,.65);
+  }
+}
+
+.resume {
+  margin-top: -100px;
+  padding: 80px;
+}
+
+.about-me {
+  font-weight: lighter;
+  font-size: 18px;
+}
+
+.about-me b {
+  color: rgba(116,127,224,.65);
+}
