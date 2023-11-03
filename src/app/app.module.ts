@@ -14,16 +14,18 @@ import { ExperienceeducationComponent } from 'src/components/experienceeducation
 import { SkillsComponent } from 'src/components/skills/skills.component';
 import { ProjectsComponent } from 'src/components/projects/projects.component';
 import { ContactComponent } from 'src/components/contact/contact.component';
+import { FooterComponent } from 'src/shared/footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    NavbarComponent,
     AboutmeComponent,
     ExperienceeducationComponent,
     SkillsComponent,
     ProjectsComponent,
     ContactComponent,
-    NavbarComponent
+    FooterComponent
    ],
   imports: [
     BrowserModule,

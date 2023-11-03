@@ -1,0 +1,37 @@
+.contact-container {
+  max-width: 68.75rem;
+  margin: auto;
+  margin-top: 2.5rem;
+}
+
+.contact-header {
+  text-align: center;
+}
+
+.contact-title {
+  font-weight: bold;
+  color: rgba(116,127,224,.65);
+}
+
+.hr-contact {
+  display: inline-flex;
+  padding: 20px;
+  border-top: 5px solid;
+}
+
+.contact-body {
+  margin-top: -30px;
+  text-align: center;
+}
+
+.contact-body img {
+  width: 35px;
+}
+
+.contact-paragraph {
+  font-weight: lighter;
+  text-align: center;
+  font-size: 22px;
+}
+
+
