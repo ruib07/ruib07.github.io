@@ -2,6 +2,7 @@
   max-width: 68.75rem;
   margin: auto;
   margin-top: 2.5rem;
+  padding: 0 10px;
 }
 
 .header {
@@ -11,6 +12,7 @@
 .projects-header {
   font-weight: bold;
   color: rgba(116,127,224,.65);
+  margin-bottom: 20px;
 }
 
 .hr-projects {
@@ -21,7 +23,7 @@
 
 .card {
   width: 100%;
-  max-width: 900px;
+  max-width: 100%;
   margin: auto;
   flex-direction: row;
   box-shadow: 5px 5px 5px lightgray;
@@ -32,13 +34,13 @@
 }
 
 .card img {
-  width: 50%;
+  width: 40%;
 }
 
 .card-title {
   font-weight: bold;
   color: rgba(116,127,224,.65);
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 @media only screen and (max-width: 768px){
@@ -49,4 +51,5 @@
 
 .card-text {
   font-weight: lighter;
+  font-size: 16px;
 }

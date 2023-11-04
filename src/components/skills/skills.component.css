@@ -1,12 +1,21 @@
 .skills {
-  max-width: 68.75rem;
+  max-width: 100%;
   margin: auto;
   text-align: center;
-  margin-top: 2.5rem;
+  margin-top: 2rem;
+  padding: 0 10px;
 }
 
 .skill-header {
+  color: rgba(116, 127, 224, 0.65);
   margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.skills-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .skills-wrapper img {
@@ -15,9 +24,13 @@
   height:150px;
 }
 
+.skills-icons {
+  padding: 1rem;
+}
+
 .icon {
-  width: 11.875rem;
-  height: 11.25rem;
+  max-width: 100%;
+  height: auto;
 }
 
 .icon-card {
@@ -26,4 +39,5 @@
   box-shadow: 5px 5px 5px lightgray;
   padding: 20px;
   margin: 10px;
+  text-align: center;
 }

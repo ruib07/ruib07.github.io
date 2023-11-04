@@ -1,79 +1,43 @@
-.experience-container {
-  margin-top: -80px;
-  padding: 80px;
-  margin-left: 20px;
-}
-
-.experience-header {
-  color: rgba(116,127,224,.65);
-  font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 20px;
-}
-
-.experience {
-  margin-bottom: 20px;
-}
-
-.experience-title {
-  color: rgba(116,127,224,.65);
-  font-size: 18px;
-  font-weight: bold;
-}
-
-.experience-date {
-  color: rgba(116,127,224,.65);
-  font-size: 14px;
-  font-weight: bold;
-  float: right;
-}
-
-.experience-location {
-  font-size: 16px;
-  margin-top: 5px;
-}
-
-.experience-desc {
-  font-size: 16px;
-  margin-top: 5px;
-}
-
+.experience-container,
 .education-container {
-  margin-top: -90px;
-  padding: 80px;
-  margin-left: 20px;
+  padding: 20px;
 }
 
+.experience-header,
 .education-header {
   color: rgba(116,127,224,.65);
-  font-size: 24px;
   font-weight: bold;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
+.experience,
 .education {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
+.experience-title,
 .education-title {
   color: rgba(116,127,224,.65);
-  font-size: 18px;
+  font-size: 16px;
   font-weight: bold;
 }
 
+.experience-date,
 .education-date {
   color: rgba(116,127,224,.65);
-  font-size: 14px;
+  font-size: 12px;
   font-weight: bold;
-  float: right;
-}
-
-.education-location {
-  font-size: 16px;
   margin-top: 5px;
 }
 
+.experience-location,
+.education-location {
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.experience-desc,
 .education-desc {
-  font-size: 16px;
+  font-size: 14px;
   margin-top: 5px;
 }

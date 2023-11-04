@@ -1,7 +1,8 @@
 .contact-container {
-  max-width: 68.75rem;
+  max-width: 100%;
   margin: auto;
-  margin-top: 2.5rem;
+  margin-top: 2rem;
+  padding: 0 10px;
 }
 
 .contact-header {
@@ -11,6 +12,7 @@
 .contact-title {
   font-weight: bold;
   color: rgba(116,127,224,.65);
+  margin-bottom: 20px;
 }
 
 .hr-contact {
@@ -20,12 +22,25 @@
 }
 
 .contact-body {
-  margin-top: -30px;
   text-align: center;
 }
 
-.contact-body img {
-  width: 35px;
+.contact-links {
+  justify-content: center;
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.contact-links a {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+}
+
+.contact-links img {
+  width: 25px;
+  margin-right: 10px;
 }
 
 .contact-paragraph {
