@@ -11,6 +11,7 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from 'src/shared/navbar/navbar.component';
 import { AboutmeComponent } from 'src/components/aboutme/aboutme.component';
 import { ExperienceeducationComponent } from 'src/components/experienceeducation/experienceeducation.component';
+import { ScrollToTopComponent } from 'src/components/scroll-to-top/scroll-to-top.component';
 import { SkillsComponent } from 'src/components/skills/skills.component';
 import { ProjectsComponent } from 'src/components/projects/projects.component';
 import { ContactComponent } from 'src/components/contact/contact.component';
@@ -22,6 +23,7 @@ import { FooterComponent } from 'src/shared/footer/footer.component';
     NavbarComponent,
     AboutmeComponent,
     ExperienceeducationComponent,
+    ScrollToTopComponent,
     SkillsComponent,
     ProjectsComponent,
     ContactComponent,
