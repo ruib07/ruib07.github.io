@@ -1,6 +1,11 @@
 .experience-container,
 .education-container {
+  transform: translateY(20px);
   padding: 20px;
+}
+
+.visible {
+  animation: fadeInUpAnimation 1000ms ease-out;
 }
 
 .experience-header,

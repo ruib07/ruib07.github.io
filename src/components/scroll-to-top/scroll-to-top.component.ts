@@ -11,17 +11,13 @@ export class ScrollToTopComponent {
   public isButtonVisible = false
 
   @HostListener('window:scroll', [])
-  // eslint-disable-next-line @typescript-eslint/explicit-function-return-type
   onWindowScroll () {
-    // eslint-disable-next-line @typescript-eslint/strict-boolean-expressions
     const currentScroll = document.documentElement.scrollTop || document.body.scrollTop
     this.isButtonVisible = currentScroll > this.scrollLimit
   }
 
-  // eslint-disable-next-line @typescript-eslint/explicit-function-return-type
   scrollToTop () {
     (function smoothscroll () {
-      // eslint-disable-next-line @typescript-eslint/strict-boolean-expressions
       const currentScroll = document.documentElement.scrollTop || document.body.scrollTop
 
       if (currentScroll > 0) {

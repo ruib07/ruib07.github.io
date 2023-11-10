@@ -1,8 +1,13 @@
 .contact-container {
+  transform: translateY(20px);
   max-width: 100%;
   margin: auto;
   margin-top: 2rem;
   padding: 0 10px;
+}
+
+.visible {
+  animation: fadeInUpAnimation 1000ms ease-out;
 }
 
 .contact-header {

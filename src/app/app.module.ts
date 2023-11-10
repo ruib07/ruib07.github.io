@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 import { MatIconModule } from '@angular/material/icon'
 import { MdbCollapseModule } from 'mdb-angular-ui-kit/collapse'
 import { AppRoutingModule } from './app-routing.module'
@@ -28,6 +29,7 @@ import { FooterComponent } from 'src/shared/footer/footer.component'
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     AppRoutingModule,
     MdbCollapseModule,
     MatIconModule

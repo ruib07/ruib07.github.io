@@ -1,8 +1,13 @@
 .projects-container {
+  transform: translateY(20px);
   max-width: 68.75rem;
   margin: auto;
   margin-top: 2.5rem;
   padding: 0 10px;
+}
+
+.visible {
+  animation: fadeInUpAnimation 1000ms ease-out;
 }
 
 .header {

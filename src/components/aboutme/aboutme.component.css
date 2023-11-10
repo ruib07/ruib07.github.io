@@ -1,6 +1,11 @@
 .intro-container {
+  transform: translateY(20px);
   text-align: center;
   padding: 20px;
+}
+
+.visible {
+  animation: fadeInUpAnimation 1000ms ease-out;
 }
 
 .intro-title {
