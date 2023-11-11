@@ -50,3 +50,20 @@
 .about-me b {
   color: rgba(116,127,224,.65);
 }
+
+@media only screen and (max-width: 768px) {
+  .intro-container {
+    text-align: center;
+    padding: 0;
+  }
+
+  .resume {
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .intro-title {
+    font-size: 24px;
+    margin: 0;
+  }
+}
