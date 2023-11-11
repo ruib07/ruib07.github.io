@@ -1,4 +1,5 @@
-import { Component, HostListener, ElementRef, Renderer2, AfterViewInit } from '@angular/core';
+import { Component, ElementRef, AfterViewInit } from '@angular/core';
+import { CheckVisibilityService } from 'src/services/checkVisibility.service';
 import { trigger, transition, style, animate } from '@angular/animations';
 
 @Component({
@@ -6,10 +7,10 @@ import { trigger, transition, style, animate } from '@angular/animations';
   templateUrl: './aboutme.component.html',
   styleUrls: ['./aboutme.component.css'],
   animations: [
-    trigger('fadeInUpAnimation', [
+    trigger('fadeInUpAnimationAboutMe', [
       transition(':enter', [
         style({ opacity: 0, transform: 'translateY(20px)' }),
-        animate('300ms', style({ opacity: 1, transform: 'translateY(0)' }))
+        animate('800ms', style({ opacity: 1, transform: 'translateY(0)' }))
       ])
     ])
   ]
@@ -17,21 +18,19 @@ import { trigger, transition, style, animate } from '@angular/animations';
 export class AboutmeComponent implements AfterViewInit {
   isVisible = false;
 
-  constructor(private el: ElementRef, private renderer: Renderer2) {}
+  constructor(private checkVisibilityService: CheckVisibilityService, private el: ElementRef) {}
 
   ngAfterViewInit() {
     this.checkVisibility();
   }
 
-  @HostListener('window:scroll', ['$event'])
   checkVisibility() {
-    const rect = this.el.nativeElement.getBoundingClientRect();
-    const windowHeight = window.innerHeight || document.documentElement.clientHeight;
-    const isVisible = rect.top <= windowHeight && rect.bottom >= 0;
+    const element = this.el.nativeElement;
 
-    if (isVisible && !this.isVisible) {
+    if (this.checkVisibilityService.checkVisibility(element)) {
       this.isVisible = true;
-      this.renderer.addClass(this.el.nativeElement, 'visible');
+    } else {
+      this.isVisible = false;
     }
   }
 }

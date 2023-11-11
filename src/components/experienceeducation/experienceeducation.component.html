@@ -1,6 +1,6 @@
 <!-- EXPERIENCE AND EDUCATION -->
   <!-- EXPERIENCE -->
-  <div [@fadeInUpAnimation] *ngIf="isVisible" class="experience-container ms-5" id="experienceeducation">
+  <div [@fadeInUpAnimationExperienceEducation] [class.visible]="isVisible" class="experience-container ms-5" id="experienceeducation">
     <h2 class="experience-header">EXPERIENCE</h2>
     <hr class="hr-spacing me-5">
     <div class="experience">
@@ -27,7 +27,7 @@
   <!-- END OF EXPERIENCE -->
 
   <!-- EDUCATION -->
-  <div [@fadeInUpAnimation] *ngIf="isVisible" class="education-container ms-5">
+  <div [@fadeInUpAnimationExperienceEducation] *ngIf="isVisible" class="education-container ms-5">
     <h2 class="education-header">EDUCATION</h2>
     <hr class="hr-spacing me-5">
     <div class="education">

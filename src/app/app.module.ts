@@ -5,6 +5,8 @@ import { MatIconModule } from '@angular/material/icon'
 import { MdbCollapseModule } from 'mdb-angular-ui-kit/collapse'
 import { AppRoutingModule } from './app-routing.module'
 
+import { CheckVisibilityService } from 'src/services/checkVisibility.service'
+
 import { AppComponent } from './app.component'
 import { NavbarComponent } from 'src/shared/navbar/navbar.component'
 import { AboutmeComponent } from 'src/components/aboutme/aboutme.component'
@@ -34,7 +36,9 @@ import { FooterComponent } from 'src/shared/footer/footer.component'
     MdbCollapseModule,
     MatIconModule
   ],
-  providers: [],
+  providers: [
+    CheckVisibilityService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
