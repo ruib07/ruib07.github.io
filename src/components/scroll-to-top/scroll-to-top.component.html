@@ -1,5 +1,5 @@
-<div class="scroll-to-top" *ngIf="isButtonVisible">
-  <button type="button" class="btn-active" data-toggle="button" (click)="scrollToTop()">
-    <mat-icon>arrow_upward</mat-icon>
-  </button>
+<div class="scroll-to-top" [ngClass]="{ 'show-scrollTop': windowScrolled }">
+  <button (click)="scrollToTop()">
+    <mat-icon>keyboard_arrow_up</mat-icon>
+  </button> 
 </div>

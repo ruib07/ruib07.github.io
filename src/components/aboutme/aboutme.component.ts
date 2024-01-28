@@ -10,15 +10,18 @@ import { trigger, transition, style, animate } from '@angular/animations';
     trigger('fadeInUpAnimationAboutMe', [
       transition(':enter', [
         style({ opacity: 0, transform: 'translateY(20px)' }),
-        animate('800ms', style({ opacity: 1, transform: 'translateY(0)' }))
-      ])
-    ])
-  ]
+        animate('800ms', style({ opacity: 1, transform: 'translateY(0)' })),
+      ]),
+    ]),
+  ],
 })
 export class AboutmeComponent implements AfterViewInit {
   isVisible = false;
 
-  constructor(private checkVisibilityService: CheckVisibilityService, private el: ElementRef) {}
+  constructor(
+    private checkVisibilityService: CheckVisibilityService,
+    private el: ElementRef
+  ) {}
 
   ngAfterViewInit() {
     this.checkVisibility();

@@ -11,7 +11,7 @@
 
 .experience-header,
 .education-header {
-  color: rgba(116,127,224,.65);
+  color: rgba(116, 127, 224, 0.65);
   font-weight: bold;
   margin-bottom: 10px;
 }
@@ -23,27 +23,27 @@
 
 .experience-title,
 .education-title {
-  color: rgba(116,127,224,.65);
-  font-size: 16px;
+  color: rgba(116, 127, 224, 0.65);
+  font-size: 24px;
   font-weight: bold;
 }
 
 .experience-date,
 .education-date {
-  color: rgba(116,127,224,.65);
-  font-size: 12px;
+  color: rgba(116, 127, 224, 0.65);
+  font-size: 18px;
   font-weight: bold;
   margin-top: 5px;
 }
 
 .experience-location,
 .education-location {
-  font-size: 14px;
+  font-size: 16px;
   margin-top: 5px;
 }
 
 .experience-desc,
 .education-desc {
-  font-size: 14px;
+  font-size: 16px;
   margin-top: 5px;
 }

@@ -11,13 +11,14 @@
 
 .intro-title {
   font-size: 30px;
-  color: rgba(116,127,224,.65);
+  color: rgba(116, 127, 224, 0.65);
 }
 
 .blinking {
+  margin-top: -8px;
   width: 10px;
   height: 30px;
-  background-color: rgba(116,127,224,.65);
+  background-color: rgba(116, 127, 224, 0.65);
   -webkit-animation: blinking 1s infinite;
   animation: blinking 1s infinite;
   display: inline-block;
@@ -26,13 +27,13 @@
 
 @keyframes blinking {
   0% {
-      background-color: transparent;
+    background-color: transparent;
   }
   49% {
-      background-color: transparent
+    background-color: transparent;
   }
   50% {
-      background-color: rgba(116,127,224,.65);
+    background-color: rgba(116, 127, 224, 0.65);
   }
 }
 
@@ -41,6 +42,8 @@
 }
 
 .about-me {
+  width: 50%;
+  margin: 0 auto;
   font-weight: lighter;
   font-size: 16px;
   line-height: 1.5;
@@ -48,7 +51,8 @@
 }
 
 .about-me b {
-  color: rgba(116,127,224,.65);
+  font-weight: bold;
+  color: rgba(116, 127, 224, 0.65);
 }
 
 @media only screen and (max-width: 768px) {

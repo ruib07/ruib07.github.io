@@ -1,21 +1,44 @@
 <!-- CONTACT -->
-<div [@fadeInUpAnimationContact] [class.visible]="isVisible" class="contact-container" id="contact">
+<div
+  [@fadeInUpAnimationContact]
+  [class.visible]="isVisible"
+  class="contact-container"
+  id="contact"
+>
   <div class="contact-header">
     <h2 class="contact-title">Contact</h2>
-    <hr class="hr-contact">
+    <hr class="hr-contact" />
   </div>
   <div class="contact-body">
     <p class="contact-paragraph">Get in touch with me via LinkedIn or email.</p>
 
     <div class="contact-links">
-      <a href="https://www.linkedin.com/in/rui-barreto-814071248/" class="btn btn-outline-primary" target="_blank">
-        <img src="../../assets/icons/linkedin.svg.png" alt="LinkedIn" /> LinkedIn
-      </a>
+      <div class="linkedin-contact">
+        <a
+          href="https://www.linkedin.com/in/rui-barreto-814071248/"
+          class="btn btn-outline-primary"
+          target="_blank"
+        >
+          <img src="../../assets/icons/linkedin.svg.png" alt="LinkedIn" />
+          LinkedIn
+        </a>
+      </div>
 
-      <a href="mailto:ruibarreto07@outlook.com" class="btn btn-outline-dark" target="_blank">
-        <img src="../../assets/icons/email.png" alt="Email" /> Email
-      </a>
+      <div class="email-contact">
+        <a
+          href="mailto:ruibarreto07@outlook.com"
+          class="btn btn-outline-dark"
+          target="_blank"
+        >
+          <img
+            src="../../assets/icons/email.png"
+            alt="Email"
+          />
+          Email
+        </a>
+      </div>
     </div>
   </div>
-</div><br>
+</div>
+<br />
 <!-- END OF CONTACT -->

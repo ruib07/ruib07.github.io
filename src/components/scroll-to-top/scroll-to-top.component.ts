@@ -1,29 +1,42 @@
-/* eslint-disable @typescript-eslint/prefer-readonly */
-import { Component, HostListener } from '@angular/core'
+import { DOCUMENT } from '@angular/common';
+import { Component, HostListener, Inject } from '@angular/core';
 
 @Component({
   selector: 'app-scroll-to-top',
   templateUrl: './scroll-to-top.component.html',
-  styleUrls: ['./scroll-to-top.component.css']
+  styleUrls: ['./scroll-to-top.component.css'],
 })
 export class ScrollToTopComponent {
-  private scrollLimit = 600
-  public isButtonVisible = false
+  windowScrolled: boolean | undefined;
+
+  constructor(@Inject(DOCUMENT) private document: Document) {}
 
   @HostListener('window:scroll', [])
-  onWindowScroll () {
-    const currentScroll = document.documentElement.scrollTop || document.body.scrollTop
-    this.isButtonVisible = currentScroll > this.scrollLimit
+  onWindowScroll() {
+    if (
+      window.pageYOffset ||
+      document.documentElement.scrollTop ||
+      document.body.scrollTop > 600
+    ) {
+      this.windowScrolled = true;
+    } else if (
+      (this.windowScrolled && window.pageYOffset) ||
+      document.documentElement.scrollTop ||
+      document.body.scrollTop < 10
+    ) {
+      this.windowScrolled = false;
+    }
   }
 
-  scrollToTop () {
-    (function smoothscroll () {
-      const currentScroll = document.documentElement.scrollTop || document.body.scrollTop
+  scrollToTop() {
+    (function smoothscroll() {
+      var currentScroll =
+        document.documentElement.scrollTop || document.body.scrollTop;
 
       if (currentScroll > 0) {
-        window.requestAnimationFrame(smoothscroll)
-        window.scrollTo(0, currentScroll - (currentScroll / 6))
+        window.requestAnimationFrame(smoothscroll);
+        window.scrollTo(0, currentScroll - currentScroll / 8);
       }
-    })()
+    })();
   }
 }

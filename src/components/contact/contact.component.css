@@ -17,7 +17,7 @@
 
 .contact-title {
   font-weight: bold;
-  color: rgba(116,127,224,.65);
+  color: rgba(116, 127, 224, 0.65);
   margin-bottom: 20px;
 }
 
@@ -25,6 +25,7 @@
   display: inline-flex;
   padding: 20px;
   border-top: 5px solid;
+  margin-bottom: -10px;
 }
 
 .contact-body {
@@ -49,10 +50,12 @@
   margin-right: 10px;
 }
 
+.email-contact a:hover img {
+  filter: invert(1);
+}
+
 .contact-paragraph {
   font-weight: lighter;
   text-align: center;
   font-size: 22px;
 }
-
-

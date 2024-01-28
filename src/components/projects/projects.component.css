@@ -17,7 +17,7 @@
 
 .projects-header {
   font-weight: bold;
-  color: rgba(116,127,224,.65);
+  color: rgba(116, 127, 224, 0.65);
   margin-bottom: 20px;
 }
 
@@ -35,21 +35,27 @@
   box-shadow: 5px 5px 5px lightgray;
 }
 
+.card video {
+  border-radius: 5px;
+}
+
 .card a img {
   width: 25px;
 }
 
 .card img {
-  width: 40%;
+  border-radius: 5px;
+  width: 47%;
 }
 
 .card-title {
   font-weight: bold;
-  color: rgba(116,127,224,.65);
-  margin-bottom: 10px;
+  font-size: 22px;
+  color: rgba(116, 127, 224, 0.65);
+  margin-bottom: 12px;
 }
 
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 768px) {
   .card img {
     display: none;
   }
@@ -57,5 +63,5 @@
 
 .card-text {
   font-weight: lighter;
-  font-size: 16px;
+  font-size: 18px;
 }
