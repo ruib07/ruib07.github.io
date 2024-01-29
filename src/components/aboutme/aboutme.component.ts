@@ -1,6 +1,13 @@
-import { Component, ElementRef, AfterViewInit } from '@angular/core';
+import {
+  Component,
+  ElementRef,
+  AfterViewInit,
+  inject,
+  TemplateRef,
+} from '@angular/core';
 import { CheckVisibilityService } from 'src/services/checkVisibility.service';
 import { trigger, transition, style, animate } from '@angular/animations';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-aboutme',
@@ -17,6 +24,7 @@ import { trigger, transition, style, animate } from '@angular/animations';
 })
 export class AboutmeComponent implements AfterViewInit {
   isVisible = false;
+  private modalService = inject(NgbModal);
 
   constructor(
     private checkVisibilityService: CheckVisibilityService,
@@ -35,5 +43,9 @@ export class AboutmeComponent implements AfterViewInit {
     } else {
       this.isVisible = false;
     }
+  }
+
+  openVerticallyCentered(content: TemplateRef<any>) {
+    this.modalService.open(content, { centered: true });
   }
 }

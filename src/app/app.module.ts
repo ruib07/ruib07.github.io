@@ -4,6 +4,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatIconModule } from '@angular/material/icon';
 import { MdbCollapseModule } from 'mdb-angular-ui-kit/collapse';
 import { AppRoutingModule } from './app-routing.module';
+import { NgbModalModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { CheckVisibilityService } from 'src/services/checkVisibility.service';
 
@@ -35,6 +36,7 @@ import { FooterComponent } from 'src/shared/footer/footer.component';
     AppRoutingModule,
     MdbCollapseModule,
     MatIconModule,
+    NgbModalModule,
   ],
   providers: [CheckVisibilityService],
   bootstrap: [AppComponent],
