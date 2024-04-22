@@ -11,7 +11,7 @@
 
 .experience-header,
 .education-header {
-  color: rgba(116, 127, 224, 0.65);
+  color: rgba(147,112,219);
   font-weight: bold;
   margin-bottom: 10px;
 }
@@ -23,14 +23,14 @@
 
 .experience-title,
 .education-title {
-  color: rgba(116, 127, 224, 0.65);
+  color: rgba(147,112,219);
   font-size: 24px;
   font-weight: bold;
 }
 
 .experience-date,
 .education-date {
-  color: rgba(116, 127, 224, 0.65);
+  color: rgba(147,112,219);
   font-size: 18px;
   font-weight: bold;
   margin-top: 5px;
