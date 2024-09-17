@@ -3,7 +3,7 @@
 }
 
 .nav-item-logo img {
-  width: 180px!important;
+  width: 65px!important;
 }
 
 .nav-item {
@@ -16,8 +16,8 @@
   width: 30px;
 }
 
-.nav-link:hover {
-  color: rgba(147, 112, 219);
+.nav-link {
+  color: #fff;
 }
 
 .nav-link {

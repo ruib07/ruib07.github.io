@@ -1,16 +1,14 @@
 <!-- CONTACT -->
-<div
-  [@fadeInUpAnimationContact]
-  [class.visible]="isVisible"
-  class="contact-container"
-  id="contact"
->
+<div class="contact-container" id="contact">
   <div class="contact-header">
     <h2 class="contact-title">Contact</h2>
     <hr class="hr-contact" />
+    <br />
   </div>
   <div class="contact-body">
-    <p class="contact-paragraph">Get in touch with me via LinkedIn or email.</p>
+    <p class="contact-paragraph">
+      Get in touch with me via LinkedIn, GitHub or email.
+    </p>
 
     <div class="contact-links">
       <div class="linkedin-contact">
@@ -19,22 +17,27 @@
           class="btn btn-outline-primary"
           target="_blank"
         >
-          <img src="../../assets/icons/linkedin.svg.png" alt="LinkedIn" />
-          LinkedIn
+          <img src="../../assets/icons/linkedin.webp" alt="LinkedIn" />
+        </a>
+      </div>
+
+      <div class="linkedin-contact">
+        <a
+          href="https://github.com/ruib07"
+          class="btn btn-outline-primary"
+          target="_blank"
+        >
+          <img src="../../assets/icons/github.png" alt="GitHub" />
         </a>
       </div>
 
       <div class="email-contact">
         <a
           href="mailto:ruibarreto07@outlook.com"
-          class="btn btn-outline-dark"
+          class="btn btn-outline-primary"
           target="_blank"
         >
-          <img
-            src="../../assets/icons/email.png"
-            alt="Email"
-          />
-          Email
+          <img src="../../assets/icons/email.png" alt="Email" />
         </a>
       </div>
     </div>

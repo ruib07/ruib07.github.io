@@ -13,7 +13,7 @@
 }
 
 .skill-header {
-  color: rgba(147, 112, 219);
+  color: #fff;
   margin-bottom: 1rem;
   font-weight: bold;
 }
@@ -26,8 +26,8 @@
 
 .skills-wrapper img {
   padding: 1.25rem;
-  width: 150px;
-  height: 150px;
+  width: 120px;
+  height: 120px;
 }
 
 .skills-icons {
@@ -40,9 +40,8 @@
 }
 
 .icon-card {
-  background-color: #fff;
-  border-radius: 11px;
-  box-shadow: 5px 5px 5px 5px lightgray;
+  background-color: #251C31;
+  border-radius: 70px;
   padding: 20px;
   margin: 10px;
   text-align: center;

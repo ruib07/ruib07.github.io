@@ -7,7 +7,7 @@
 }
 
 .scroll-to-top button {
-  background-color: rgba(147, 112, 219);
+  background: linear-gradient(145deg, #3b0070, #14002e);
   border: none;
   border-radius: 7px;
   color: #fff;

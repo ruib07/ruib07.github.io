@@ -1,54 +1,41 @@
 <!-- ABOUT ME -->
-<div class="intro-container ms-5" id="start">
-  <div class="intro-title">
-    > Hi, I´m <b>RUI BARRETO</b>
-    <div class="blinking"></div>
+
+<div class="intro-section" id="start">
+  <div class="hello-arrow">
+    <p class="hello-text">
+      Hello! I’m <span class="highlight-name">Rui Barreto</span>
+    </p>
+    <div class="arrow"></div>
   </div>
-</div>
-<br />
-<ng-template #content let-modal>
-  <div class="modal-header">
-    <h4 class="modal-title">About Me</h4>
-    <button
-      type="button"
-      class="btn-close"
-      aria-label="Close"
-      (click)="modal.dismiss('Cross click')"
-    ></button>
+  <div class="avatar-description">
+    <div class="avatar-container">
+      <img
+        src="assets/icons/avatar.png"
+        alt="Avatar with Laptop"
+        class="avatar"
+      />
+    </div>
+    <div class="intro-text">
+      <p class="description">
+        A passionate Developer who <br />
+        <span class="highlight-judges"
+          >turns ideas into code, one line at a time.</span
+        >
+      </p>
+    </div>
   </div>
-  <div class="modal-body">
-    <p class="about-me">
-      I´m a <b>Full-Stack Developer</b> student with a passion for learning new
-      programming languages and technologies. <br />
-      Currently, I´m making an internship as a
-      <b>Technical Consultant</b> at Cegid Primavera. <br />I thrive on keeping
-      up with the latest trends in the programming market, as it is essential to
-      constantly learn new tools and technologies, especially in this rapidly
-      evolving field.<br />My ultimate goal is to become a Software Engineer and
-      to work in a company that fosters a happy environment where I can grow
-      both professionally and personally.
+  <br /><br />
+  <div class="small-description">
+    <h1 style="text-align: center">
+      Currently a <span class="highlight-job">Technical Consultant</span>
+    </h1>
+    <p class="bio">
+      As a dedicated Full-Stack Developer, I am driven by a relentless curiosity
+      for new programming languages and technologies. I am committed to staying
+      ahead of industry trends, continuously learning, and mastering emerging
+      tools to solve complex problems and drive innovation.
     </p>
   </div>
-  <div class="modal-footer">
-    <button
-      type="button"
-      class="btn btn-secondary"
-      (click)="modal.close('Close click')"
-    >
-      Close
-    </button>
-  </div>
-</ng-template>
-<div
-  [@fadeInUpAnimationAboutMe]
-  [class.visible]="isVisible"
-  class="resume ms-5"
->
-  <button
-    class="btn btn-outline-dark mb-2 me-2"
-    (click)="openVerticallyCentered(content)"
-  >
-    About Me
-  </button>
 </div>
+
 <!-- END OF ABOUT ME -->

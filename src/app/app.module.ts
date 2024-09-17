@@ -6,8 +6,6 @@ import { MdbCollapseModule } from 'mdb-angular-ui-kit/collapse';
 import { AppRoutingModule } from './app-routing.module';
 import { NgbModalModule } from '@ng-bootstrap/ng-bootstrap';
 
-import { CheckVisibilityService } from 'src/services/checkVisibility.service';
-
 import { AppComponent } from './app.component';
 import { NavbarComponent } from 'src/shared/navbar/navbar.component';
 import { AboutmeComponent } from 'src/components/aboutme/aboutme.component';
@@ -17,6 +15,7 @@ import { SkillsComponent } from 'src/components/skills/skills.component';
 import { ProjectsComponent } from 'src/components/projects/projects.component';
 import { ContactComponent } from 'src/components/contact/contact.component';
 import { FooterComponent } from 'src/shared/footer/footer.component';
+import { WorkExperienceModalComponent } from 'src/components/work-experience-modal/work-experience-modal.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +28,7 @@ import { FooterComponent } from 'src/shared/footer/footer.component';
     ProjectsComponent,
     ContactComponent,
     FooterComponent,
+    WorkExperienceModalComponent,
   ],
   imports: [
     BrowserModule,
@@ -38,7 +38,7 @@ import { FooterComponent } from 'src/shared/footer/footer.component';
     MatIconModule,
     NgbModalModule,
   ],
-  providers: [CheckVisibilityService],
+  providers: [],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

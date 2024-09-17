@@ -1,120 +1,134 @@
-<!-- EXPERIENCE AND EDUCATION -->
 <!-- EXPERIENCE -->
-<div
-  [@fadeInUpAnimationExperienceEducation]
-  [class.visible]="isVisible"
-  class="experience-container ms-5"
-  id="experienceeducation"
->
-  <h2 class="experience-header">EXPERIENCE</h2>
-  <hr class="hr-spacing me-5" />
-  <div class="experience">
-    <h5 class="experience-title">Technical Consultant - Cegid Primavera</h5>
-    <div class="experience-date me-5">sep 2024 - present</div>
-    <p class="experience-location">Braga, Portugal | Hybrid</p>
-    <p class="experience-desc"></p>
-  </div>
-  <hr class="hr-spacing me-5" />
-  <div class="experience">
-    <h5 class="experience-title">
-      Technical Consultant Trainee - Cegid Primavera
-    </h5>
-    <div class="experience-date me-5">feb 2024 - jul 2024</div>
-    <p class="experience-location">Braga, Portugal | Hybrid</p>
-    <p class="experience-desc">
-      The objective of my internship was to develop an integration between 2
-      softwares.<br />
-      I developed robust functionalities that enable comprehensive employee
-      management across both software platforms. <br />Additionally, I
-      implemented an initial feature to efficiently oversee employee training
-      programs. I also conducted thorough<br />
-      end-to-end testing to ensure the reliability and effectiveness of the
-      functionalities I developed.
-    </p>
-  </div>
-  <hr class="hr-spacing me-5" />
-  <div class="experience">
-    <h5 class="experience-title">Backend Developer Trainee - Activex, lda.</h5>
-    <div class="experience-date me-5">jul 2023</div>
-    <p class="experience-location">Braga, Portugal | On-site</p>
-    <p class="experience-desc">
-      I learned how to use effectively .NET Web API with Swagger, to make a
-      clean code with C#, to create, update,<br />
-      delete and making queries to consult tables with SQL Server and learned
-      the best practices to build good API´s.
-    </p>
-  </div>
-  <hr class="hr-spacing me-5" />
-  <div class="experience">
-    <h5 class="experience-title">.NET Developer Trainee - Activex, lda.</h5>
-    <div class="experience-date me-5">set 2022 - nov 2022</div>
-    <p class="experience-location">Braga, Portugal | Remote</p>
-    <p class="experience-desc">
-      I made a formation to learn how to make an website using C#, ASP.NET MVC,
-      Entity <br />Framework Core and SQL Server.
-    </p>
-  </div>
-  <hr class="hr-spacing me-5" />
-  <div class="experience">
-    <h5 class="experience-title">Frontend Developer Intern - Activex, lda.</h5>
-    <div class="experience-date me-5">aug 2022</div>
-    <p class="experience-location">Braga, Portugal | On-site</p>
-    <p class="experience-desc">
-      This intership I develop the frontend for the websites for the clients
-      using<br />Wordpress, HTML, CSS and JavaScript.
-    </p>
-  </div>
-  <hr class="hr-spacing me-5" />
-  <div class="experience">
-    <h5 class="experience-title">IT Technician Intern - Município de Braga</h5>
-    <div class="experience-date me-5">fev 2022 - jun 2022</div>
-    <p class="experience-location">Braga, Portugal | On-site</p>
-    <p class="experience-desc">
-      In this internship I worked in the hardware area.<br />
-      I helped with troubleshooting employee computers, assembling computers,
-      installing operating systems<br />
-      and software on new computers and changing equipment.
-    </p>
-  </div>
-  <hr class="hr-spacing me-5" />
-</div>
-<!-- END OF EXPERIENCE -->
 
-<!-- EDUCATION -->
-<div
-  [@fadeInUpAnimationExperienceEducation]
-  *ngIf="isVisible"
-  class="education-container ms-5"
->
-  <h2 class="education-header">EDUCATION</h2>
-  <hr class="hr-spacing me-5" />
-  <div class="education">
-    <h5 class="education-title">
-      Technical Short Cycle Course, Web Development and Multimedia - IPCA
-    </h5>
-    <div class="education-date me-5">oct 2022 - jul 2024</div>
-    <p class="education-location">Famalicão, Portugal</p>
-    <p class="education-desc">
-      This course was very important for me to develop the necessary skills to
-      become a complete Full-Stack Developer,<br />in terms of planning the
-      project and developing the project on both the frontend and backend.
-    </p>
+<div class="work-experience" id="experience">
+  <h1>Work Experience</h1>
+  <div class="card-container">
+    <div class="card">
+      <div class="icon-text">
+        <div class="icon-container">
+          <img src="assets/WorkIcons/Job1.png" alt="Icon 1" />
+        </div>
+        <h2>Technical Consultant</h2>
+      </div>
+      <p>Continuing developing an integration between 2 softwares.</p>
+      <button
+        class="learn-more"
+        (click)="
+          openModal(
+            'Technical Consultant - Cegid Primavera',
+            'Continuing developing an integration between 2 softwares with .NET Core.'
+          )
+        "
+      >
+        Learn More
+      </button>
+    </div>
+
+    <div class="card">
+      <div class="icon-text">
+        <div class="icon-container">
+          <img src="assets/WorkIcons/Job2.png" alt="Icon 2" />
+        </div>
+        <h2>Technical Consultant Trainee</h2>
+      </div>
+      <p>Developing an integration between 2 softwares.</p>
+      <button
+        class="learn-more"
+        (click)="
+          openModal(
+            'Technical Consultant Trainee - Cegid Primavera',
+            'The objective of my internship was to develop an integration between 2 softwares. I developed robust functionalities that enable comprehensive employee management across both software platforms. Additionally, I implemented an initial feature to efficiently oversee employee training programs. I also conducted thorough end-to-end testing to ensure the reliability and effectiveness of the functionalities I developed.'
+          )
+        "
+      >
+        Learn More
+      </button>
+    </div>
+
+    <div class="card">
+      <div class="icon-text">
+        <div class="icon-container">
+          <img src="assets/WorkIcons/Job3.png" alt="Icon 3" />
+        </div>
+        <h2>Backend Developer Trainee</h2>
+      </div>
+      <p>Learned how to make good API´s with .NET Web API.</p>
+      <button
+        class="learn-more"
+        (click)="
+          openModal(
+            'Backend Developer Trainee - Activex',
+            'I learned how to use effectively .NET Web API with Swagger, to make a clean code with C#, to create, update, delete and making queries to consult tables with SQL Server and learned the best practices to build good API´s.'
+          )
+        "
+      >
+        Learn More
+      </button>
+    </div>
+
+    <div class="card">
+      <div class="icon-text">
+        <div class="icon-container">
+          <img src="assets/WorkIcons/Job4.png" alt="Icon 4" />
+        </div>
+        <h2>.NET Developer Trainee</h2>
+      </div>
+      <p>Learining how to make web applications with ASP.NET MVC.</p>
+      <button
+        class="learn-more"
+        (click)="
+          openModal(
+            '.NET Developer Trainee - Activex',
+            'I made a formation to learn how to make an website using C#, ASP.NET MVC, Entity Framework Core and SQL Server.'
+          )
+        "
+      >
+        Learn More
+      </button>
+    </div>
+
+    <div class="card">
+      <div class="icon-text">
+        <div class="icon-container">
+          <img src="assets/WorkIcons/website.png" alt="Icon 4" />
+        </div>
+        <h2>Frontend Developer</h2>
+      </div>
+      <p>Develop the frontend for websites to company clients.</p>
+      <button
+        class="learn-more"
+        (click)="
+          openModal(
+            'Frontend Developer - Activex',
+            'This intership I develop the frontend for the websites for the clients using Wordpress, HTML, CSS and JavaScript.'
+          )
+        "
+      >
+        Learn More
+      </button>
+    </div>
+
+    <div class="card">
+      <div class="icon-text">
+        <div class="icon-container">
+          <img src="assets/WorkIcons/hardware.png" alt="Icon 4" />
+        </div>
+        <h2>IT Technician</h2>
+      </div>
+      <p>Responsible to help the team to resolve hardware problems.</p>
+      <button
+        class="learn-more"
+        (click)="
+          openModal(
+            'IT Technician - Município de Braga',
+            'In this internship I worked in the hardware area. I helped with troubleshooting employee computers, assembling computers, installing operating systems and software on new computers and changing equipment.'
+          )
+        "
+      >
+        Learn More
+      </button>
+    </div>
   </div>
-  <hr class="hr-spacing me-5" />
-  <div class="education">
-    <h5 class="education-title">
-      Professional Course, Computer Systems Management and Programming
-    </h5>
-    <div class="education-date me-5">sep 2019 - jul 2022</div>
-    <p class="education-location">Braga, Portugal</p>
-    <p class="education-desc">
-      This course allowed me to develop the skills necessary to work as a
-      software developer or web developer. I learned<br />how to plan a project
-      from scratch, design a solid structure for a database and program a
-      project from scratch.
-    </p>
-  </div>
-  <hr class="hr-spacing me-5" />
 </div>
-<!-- END OF EDUCATION -->
-<!-- END OF EXPERIENCE AND EDUCATION -->
+
+<!-- END OF EXPERIENCE -->
