@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/static/css/main.5a82493e.css",
+    "main.js": "/static/js/main.08ff8c56.js",
+    "static/js/453.f69bbbff.chunk.js": "/static/js/453.f69bbbff.chunk.js",
+    "static/media/TheKnifeVideo.mp4": "/static/media/TheKnifeVideo.039a5e9470e722c00039.mp4",
+    "static/media/event.jpg": "/static/media/event.358aeb452a932653652e.jpg",
+    "static/media/hardware.png": "/static/media/hardware.55d7ea888d145fb1aaa4.png",
+    "static/media/database.png": "/static/media/database.39cbff087852a5a90786.png",
+    "static/media/avatar.png": "/static/media/avatar.2f47ea4c9cf7c09f1ae4.png",
+    "static/media/csharp.svg.png": "/static/media/csharp.svg.f089e215291596c8b583.png",
+    "static/media/Tasks-img.webp": "/static/media/Tasks-img.3832e84e957c20f65ca8.webp",
+    "static/media/burguer-store.webp": "/static/media/burguer-store.548b464dec15cd9f3825.webp",
+    "static/media/javascript.webp": "/static/media/javascript.1053926cf2f54323bdc1.webp",
+    "static/media/react.svg.webp": "/static/media/react.svg.79a917985a352f67753b.webp",
+    "static/media/Job2.png": "/static/media/Job2.5e5b3f2c415f647fa25d.png",
+    "static/media/html.png": "/static/media/html.959300d6eebfbc1062dd.png",
+    "static/media/Job4.png": "/static/media/Job4.3c88616518e8331696b2.png",
+    "static/media/Job1.png": "/static/media/Job1.d353554bb76830fea37c.png",
+    "static/media/bootstrap.png": "/static/media/bootstrap.268c4375260420e8d982.png",
+    "static/media/Job3.png": "/static/media/Job3.cd24d32f5cbd667b6dba.png",
+    "static/media/WeatherApp.webp": "/static/media/WeatherApp.e157ddf9fc23cc0fc0bc.webp",
+    "static/media/arrowright.png": "/static/media/arrowright.04e242d304d8b4ba7247.png",
+    "static/media/arrowleft.png": "/static/media/arrowleft.7ac2a0bc29687682e765.png",
+    "static/media/linkedin.webp": "/static/media/linkedin.aa0a6b93275c33e6ecab.webp",
+    "index.html": "/index.html",
+    "main.5a82493e.css.map": "/static/css/main.5a82493e.css.map",
+    "main.08ff8c56.js.map": "/static/js/main.08ff8c56.js.map",
+    "453.f69bbbff.chunk.js.map": "/static/js/453.f69bbbff.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5a82493e.css",
+    "static/js/main.08ff8c56.js"
+  ]
+}
