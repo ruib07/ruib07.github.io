@@ -1,0 +1,86 @@
+.skills {
+    transform: translateY(20px);
+    max-width: 100%;
+    margin: auto;
+    text-align: center;
+    margin-top: 2rem;
+    padding: 0 10px;
+}
+
+.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.skill-header {
+    color: #fff;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.skills-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skills-wrapper img {
+    padding: 1.25rem;
+    width: 120px;
+    height: 120px;
+}
+
+.skills-icons {
+    padding: 1rem;
+}
+
+.icon {
+    max-width: 100%;
+    height: auto;
+}
+
+.icon-card {
+    background-color: #251C31;
+    border-radius: 70px;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.pagination img {
+    width: 25px;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:disabled {
+    background-color: transparent;
+    cursor: not-allowed;
+}
+
+@media only screen and (max-width: 768px) {
+    .skills-icons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .icon-card {
+        width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+    }
+}
