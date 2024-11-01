@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import { FaBars } from "react-icons/fa"; 
-import '../styles/Navbar.css';
-import Logo from '../assets/SkillsIcons/logo.png';
+import { FaBars } from "react-icons/fa";
+import "../styles/Navbar.css";
+import Logo from "../assets/SkillsIcons/logo.png";
 
 const Navbar: React.FC = () => {
   const [isCollapsed, setIsCollapsed] = useState<boolean>(true);
@@ -12,9 +12,7 @@ const Navbar: React.FC = () => {
 
   return (
     <>
-      <nav
-        className="navbar fixed-top navbar-expand-lg navbar-dark bg-dark"
-      >
+      <nav className="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
         <div className="container-fluid">
           <button
             className="navbar-toggler"
@@ -38,30 +36,44 @@ const Navbar: React.FC = () => {
           </div>
 
           <div
-            className={`collapse navbar-collapse me-5 ${!isCollapsed ? "show" : ""}`}
+            className={`collapse navbar-collapse me-5 ${
+              !isCollapsed ? "show" : ""
+            }`}
             id="navbarCentered"
           >
             <ul className="navbar-nav mb-2 mb-lg-0">
               <li className="nav-item">
-                <a className="nav-link" href="#start">About Me</a>
+                <a className="nav-link" href="#start">
+                  About Me
+                </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#experience">Work Experience</a>
+                <a className="nav-link" href="#experience">
+                  Work Experience
+                </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#skills">Skills</a>
+                <a className="nav-link" href="#skills">
+                  Skills
+                </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#projects">Projects</a>
+                <a className="nav-link" href="#projects">
+                  Projects
+                </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#contact">Contact</a>
+                <a className="nav-link" href="#contact">
+                  Contact
+                </a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
-      <br /><br /><br />
+      <br />
+      <br />
+      <br />
     </>
   );
 };

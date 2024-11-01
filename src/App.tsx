@@ -1,19 +1,17 @@
-import React from 'react';
-import './App.css';
+import "./App.css";
+import AboutMe from "./components/AboutMe";
+import Experience from "./components/Experience";
+import ScrollToTop from "./hooks/ScrollToTop";
+import Skills from "./components/Skills";
+import Projects from "./components/Projects";
+import Contact from "./components/Contact";
+import Footer from "./components/shared/Footer";
+import Header from "./components/shared/Header";
 
-import Navbar from './components/Navbar';
-import AboutMe from './components/AboutMe';
-import Experience from './components/Experience';
-import ScrollToTop from './components/ScrollToTop';
-import Skills from './components/Skills';
-import Projects from './components/Projects';
-import Contact from './components/Contact';
-import Footer from './components/Footer';
-
-const App: React.FC = () => {
+export default function App() {
   return (
-    <>
-      <Navbar />
+    <div className="mt-16">
+      <Header />
       <AboutMe />
       <Experience />
       <ScrollToTop />
@@ -21,8 +19,6 @@ const App: React.FC = () => {
       <Projects />
       <Contact />
       <Footer />
-    </>
-  )
+    </div>
+  );
 }
-
-export default App;
