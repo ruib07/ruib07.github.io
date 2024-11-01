@@ -11,7 +11,7 @@ export default function Contact() {
       </div>
 
       <div className="text-center mb-6">
-        <p className="text-gray-600">
+        <p className="text-gray-600 text-lg">
           Get in touch with me via LinkedIn, GitHub or email.
         </p>
       </div>
@@ -19,16 +19,16 @@ export default function Contact() {
       <div className="flex justify-center gap-6">
         <a
           href="https://www.linkedin.com/in/rui-barreto-814071248/"
-          className="flex items-center justify-center w-12 h-12 rounded-full bg-blue-600 hover:bg-blue-700 transition duration-300"
+          className="flex items-center justify-center w-12 h-12 rounded-full bg-blue-600 hover:bg-blue-700 hover:scale-110"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img src={LinkedinLogo} alt="LinkedIn" className="w-8 h-8" />
+          <img src={LinkedinLogo} alt="LinkedIn" className="w-6 h-6" />
         </a>
 
         <a
           href="https://github.com/ruib07"
-          className="flex items-center justify-center w-12 h-12 rounded-full bg-blue-600 hover:bg-blue-700 transition duration-300"
+          className="flex items-center justify-center w-12 h-12 rounded-full bg-blue-600 hover:bg-blue-700 hover:scale-110"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -37,11 +37,11 @@ export default function Contact() {
 
         <a
           href="mailto:ruibarreto07@outlook.com"
-          className="flex items-center justify-center w-12 h-12 rounded-full bg-blue-600 hover:bg-blue-700 transition duration-300"
+          className="flex items-center justify-center w-12 h-12 rounded-full bg-blue-600 hover:bg-blue-700 hover:scale-110"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img src={EmailLogo} alt="Email" className="w-8 h-8" />
+          <img src={EmailLogo} alt="Email" className="w-10 h-10" />
         </a>
       </div>
     </div>

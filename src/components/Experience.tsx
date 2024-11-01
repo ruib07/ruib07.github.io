@@ -8,26 +8,31 @@ export default function Experience() {
     modalDescription: string;
   } | null>(null);
 
+  const [isVisible, setIsVisible] = useState(false);
+
   const handleClose = () => {
-    setShowModal(false);
-    setModalContent(null);
+    setIsVisible(false);
+    setTimeout(() => {
+      setShowModal(false);
+      setModalContent(null);
+    }, 300);
   };
 
   const handleShow = (job: { title: string; modalDescription: string }) => {
     setModalContent(job);
     setShowModal(true);
+    setTimeout(() => setIsVisible(true), 10);
   };
 
   return (
     <div className="bg-white text-center py-12" id="experience">
-      <h1 className="text-3xl font-semibold mb-8 text-blue-600">
-        Work Experience
-      </h1>
-      <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 px-4">
+      <h1 className="text-3xl font-semibold text-blue-600">Work Experience</h1>
+      <hr className="border-t-2 border-blue-700 w-1/4 mx-auto mt-2 mb-8" />
+      <div className="grid gap-6 lg:grid-cols-3 px-4">
         {jobs.map((job) => (
           <div
             key={job.title}
-            className="bg-white shadow-lg rounded-lg p-6 border border-gray-200"
+            className="bg-white shadow-lg rounded-lg p-6 border border-gray-200 max-w-md mx-auto"
           >
             <div className="mb-4">
               <img
@@ -51,8 +56,16 @@ export default function Experience() {
       </div>
 
       {showModal && (
-        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
-          <div className="bg-white rounded-lg shadow-lg p-6 max-w-md mx-auto">
+        <div
+          className={`fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50 transition-opacity duration-300 ${
+            isVisible ? "opacity-100" : "opacity-0"
+          }`}
+        >
+          <div
+            className={`bg-white rounded-lg shadow-lg p-6 max-w-lg mx-auto transform transition-all duration-300 ${
+              isVisible ? "opacity-100 scale-100" : "opacity-0 scale-95"
+            }`}
+          >
             <h2 className="text-2xl font-semibold text-blue-600 mb-4">
               {modalContent?.title}
             </h2>

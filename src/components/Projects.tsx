@@ -26,24 +26,30 @@ export default function Projects() {
                 <div className="flex flex-wrap gap-2 mb-4">
                   {project.techStack.map((tech, idx) => (
                     <span
-                      className="bg-blue-600 text-white text-xs font-semibold py-2 px-2 rounded cursor-pointer"
+                      className="bg-blue-600 text-white text-xs font-semibold py-2 px-2 rounded cursor-pointer hover:scale-110"
                       key={idx}
                     >
                       {tech}
                     </span>
                   ))}
                 </div>
-                <div className="flex flex-wrap">
+                <div className="flex flex-wrap items-center text-blue-600 text-sm">
                   {project.sourceLinks.map((link, idx) => (
-                    <a
-                      key={idx}
-                      href={link.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-blue-600 hover:underline mr-4 text-xs"
-                    >
-                      {link.label}
-                    </a>
+                    <div key={idx} className="flex items-center">
+                      <a
+                        href={link.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-blue-600 text-sm relative transition duration-200 ease-out 
+                                 before:absolute before:-bottom-0.5 before:left-0 before:w-0 before:h-0.5 
+                                 before:bg-blue-600 hover:before:w-full hover:before:transition-all"
+                      >
+                        {link.label}
+                      </a>
+                      {idx < project.sourceLinks.length - 1 && (
+                        <span className="mx-2">|</span>
+                      )}
+                    </div>
                   ))}
                 </div>
               </div>
