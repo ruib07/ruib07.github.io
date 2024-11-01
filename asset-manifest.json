@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.9f3b61a1.css",
-    "main.js": "/static/js/main.d7231e2e.js",
+    "main.css": "/static/css/main.3ab73fdd.css",
+    "main.js": "/static/js/main.ee00442b.js",
     "static/js/453.f69bbbff.chunk.js": "/static/js/453.f69bbbff.chunk.js",
     "static/media/TheKnifeVideo.mp4": "/static/media/TheKnifeVideo.039a5e9470e722c00039.mp4",
     "static/media/techconsultant.webp": "/static/media/techconsultant.ca418432570a6bd94ce8.webp",
@@ -24,16 +24,14 @@
     "static/media/typescript.png": "/static/media/typescript.0a952d771a62196d358b.png",
     "static/media/apirest.png": "/static/media/apirest.05af5fffaabbc460cc54.png",
     "static/media/WeatherApp.webp": "/static/media/WeatherApp.e157ddf9fc23cc0fc0bc.webp",
-    "static/media/arrowright.png": "/static/media/arrowright.04e242d304d8b4ba7247.png",
-    "static/media/arrowleft.png": "/static/media/arrowleft.7ac2a0bc29687682e765.png",
     "static/media/linkedin.webp": "/static/media/linkedin.aa0a6b93275c33e6ecab.webp",
     "index.html": "/index.html",
-    "main.9f3b61a1.css.map": "/static/css/main.9f3b61a1.css.map",
-    "main.d7231e2e.js.map": "/static/js/main.d7231e2e.js.map",
+    "main.3ab73fdd.css.map": "/static/css/main.3ab73fdd.css.map",
+    "main.ee00442b.js.map": "/static/js/main.ee00442b.js.map",
     "453.f69bbbff.chunk.js.map": "/static/js/453.f69bbbff.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9f3b61a1.css",
-    "static/js/main.d7231e2e.js"
+    "static/css/main.3ab73fdd.css",
+    "static/js/main.ee00442b.js"
   ]
 }
