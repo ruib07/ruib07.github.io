@@ -1,4 +1,3 @@
-import "./App.css";
 import AboutMe from "./components/AboutMe";
 import Experience from "./components/Experience";
 import ScrollToTop from "./hooks/ScrollToTop";

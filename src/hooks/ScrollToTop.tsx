@@ -23,11 +23,11 @@ export default function ScrollToTop() {
     <div
       className={`fixed bottom-8 right-8 bg-blue-600 text-white rounded-full w-12 h-12 flex items-center justify-center shadow-lg transition-opacity duration-400 ease-in-out ${
         windowScrolled ? "opacity-100" : "opacity-0 invisible"
-      }`}
+      } sm:block hidden`}
     >
       <button
         onClick={scrollToTop}
-        className="bg-transparent border-none cursor-pointer focus:outline-none hover:scale-110"
+        className="flex items-center justify-center w-full h-full bg-transparent border-none cursor-pointer focus:outline-none hover:scale-110"
         aria-label="Scroll to top"
       >
         <span className="text-xl">↑</span>

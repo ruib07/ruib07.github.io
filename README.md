@@ -1,3 +1,3 @@
 # My Personal Webiste
 
-This project was made with **React, Typescript, CSS, HTML and Bootstrap**
+This project was made with **React, Typescript, HTML and Tailwind CSS**

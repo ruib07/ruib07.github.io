@@ -2,6 +2,7 @@ import {
   Disclosure,
   DisclosureButton,
   DisclosurePanel,
+  Transition,
 } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { navigation } from "../../data/navigation";
@@ -11,7 +12,7 @@ function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(" ");
 }
 
-export default function Example() {
+export default function Header() {
   return (
     <Disclosure as="nav" className="fixed top-0 w-full bg-blue-600 z-10">
       <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
@@ -77,33 +78,42 @@ export default function Example() {
         </div>
       </div>
 
-      <DisclosurePanel className="sm:hidden">
-        <div className="space-y-1 px-2 pb-3 pt-2">
-          {navigation.map((item) => (
-            <DisclosureButton
-              key={item.name}
-              as="a"
-              href={item.href}
-              aria-current={item.current ? "page" : undefined}
-              onClick={(e) => {
-                e.preventDefault();
-                const target = document.querySelector(item.href);
-                if (target) {
-                  target.scrollIntoView({ behavior: "smooth" });
-                }
-              }}
-              className={classNames(
-                item.current
-                  ? "bg-blue-900 text-white"
-                  : "text-blue-300 hover:bg-blue-700 hover:text-white",
-                "block rounded-md px-3 py-2 text-base font-medium"
-              )}
-            >
-              {item.name}
-            </DisclosureButton>
-          ))}
-        </div>
-      </DisclosurePanel>
+      <Transition
+        enter="transition transform duration-300 ease-out"
+        enterFrom="opacity-0 -translate-y-4"
+        enterTo="opacity-100 translate-y-0"
+        leave="transition transform duration-300 ease-in"
+        leaveFrom="opacity-100 translate-y-0"
+        leaveTo="opacity-0 -translate-y-4"
+      >
+        <DisclosurePanel className="sm:hidden">
+          <div className="space-y-1 px-2 pb-3 pt-2">
+            {navigation.map((item) => (
+              <DisclosureButton
+                key={item.name}
+                as="a"
+                href={item.href}
+                aria-current={item.current ? "page" : undefined}
+                onClick={(e) => {
+                  e.preventDefault();
+                  const target = document.querySelector(item.href);
+                  if (target) {
+                    target.scrollIntoView({ behavior: "smooth" });
+                  }
+                }}
+                className={classNames(
+                  item.current
+                    ? "bg-blue-900 text-white"
+                    : "text-blue-300 hover:bg-blue-700 hover:text-white",
+                  "block rounded-md px-3 py-2 text-base font-medium"
+                )}
+              >
+                {item.name}
+              </DisclosureButton>
+            ))}
+          </div>
+        </DisclosurePanel>
+      </Transition>
     </Disclosure>
   );
 }
