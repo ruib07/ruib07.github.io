@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.d9deb135.css",
-    "main.js": "/static/js/main.2e0a7f5c.js",
+    "main.css": "/static/css/main.a7fb2e2a.css",
+    "main.js": "/static/js/main.6f8d0111.js",
     "static/media/TheKnifeVideo.mp4": "/static/media/TheKnifeVideo.039a5e9470e722c00039.mp4",
     "static/media/techconsultant.webp": "/static/media/techconsultant.ca418432570a6bd94ce8.webp",
     "static/media/event.jpg": "/static/media/event.d25ef1d8cb2cec60bc63.jpg",
@@ -11,7 +11,6 @@
     "static/media/react.png": "/static/media/react.e1812a1f0a1f36761a4d.png",
     "static/media/postgresql.png": "/static/media/postgresql.81bfe948d56143c52c21.png",
     "static/media/backenddev.jpg": "/static/media/backenddev.a60884511cc627a21309.jpg",
-    "static/media/Tasks-img.webp": "/static/media/Tasks-img.3832e84e957c20f65ca8.webp",
     "static/media/burguer-store.webp": "/static/media/burguer-store.548b464dec15cd9f3825.webp",
     "static/media/dotnetdeveloper.jpg": "/static/media/dotnetdeveloper.8b19b6c5b06e6444b130.jpg",
     "static/media/csharp.svg.png": "/static/media/csharp.svg.7fcacff39db033c9a776.png",
@@ -25,11 +24,11 @@
     "static/media/WeatherApp.webp": "/static/media/WeatherApp.e157ddf9fc23cc0fc0bc.webp",
     "static/media/linkedin.webp": "/static/media/linkedin.aa0a6b93275c33e6ecab.webp",
     "index.html": "/index.html",
-    "main.d9deb135.css.map": "/static/css/main.d9deb135.css.map",
-    "main.2e0a7f5c.js.map": "/static/js/main.2e0a7f5c.js.map"
+    "main.a7fb2e2a.css.map": "/static/css/main.a7fb2e2a.css.map",
+    "main.6f8d0111.js.map": "/static/js/main.6f8d0111.js.map"
   },
   "entrypoints": [
-    "static/css/main.d9deb135.css",
-    "static/js/main.2e0a7f5c.js"
+    "static/css/main.a7fb2e2a.css",
+    "static/js/main.6f8d0111.js"
   ]
 }

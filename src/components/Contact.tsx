@@ -1,6 +1,6 @@
-import LinkedinLogo from "../assets/SkillsIcons/linkedin.webp";
-import GitHubLogo from "../assets/SkillsIcons/github.png";
-import EmailLogo from "../assets/SkillsIcons/email.png";
+import LinkedinLogo from "../assets/ContactIcons/linkedin.webp";
+import GitHubLogo from "../assets/ContactIcons/github.png";
+import EmailLogo from "../assets/ContactIcons/email.png";
 
 export default function Contact() {
   return (
@@ -11,7 +11,7 @@ export default function Contact() {
       </div>
 
       <div className="text-center mb-6">
-        <p className="text-gray-600 text-lg">
+        <p className="text-gray-600 text-xl">
           Get in touch with me via LinkedIn, GitHub or email.
         </p>
       </div>

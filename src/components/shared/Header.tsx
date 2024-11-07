@@ -6,7 +6,7 @@ import {
 } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { navigation } from "../../data/navigation";
-import Icon from "../../assets/SkillsIcons/logo.png";
+import Icon from "../../assets/logo.png";
 
 function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(" ");

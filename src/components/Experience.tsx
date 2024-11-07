@@ -28,52 +28,50 @@ export default function Experience() {
     <div className="bg-white text-center py-12" id="experience">
       <h1 className="text-3xl font-semibold text-blue-600">Work Experience</h1>
       <hr className="border-t-2 border-blue-700 w-1/4 mx-auto mt-2 mb-8" />
-      <div className="grid gap-6 lg:grid-cols-3 px-4">
-        {jobs.map((job) => (
-          <div
-            key={job.title}
-            className="bg-white shadow-lg rounded-lg p-6 border border-gray-200 max-w-md mx-auto"
-          >
-            <div className="mb-4">
-              <img
-                src={job.image}
-                alt={job.title}
-                className="w-full h-36 object-cover rounded-t-lg"
-              />
-            </div>
-            <h2 className="text-lg font-semibold text-blue-600 mb-2">
-              {job.title}
-            </h2>
-            <p className="text-gray-600 mb-4">{job.description}</p>
-            <button
-              className="text-blue-600 border border-blue-600 py-2 px-4 rounded hover:bg-blue-600 hover:text-white transition duration-300"
+
+      <div className="max-w-7xl mx-auto px-4 lg:px-8">
+        <div className="grid gap-10 grid-cols-1 sm:grid-cols-2">
+          {jobs.map((job) => (
+            <div
+              key={job.title}
               onClick={() => handleShow(job)}
+              className="bg-white rounded-lg p-6 border border-gray-200 hover:shadow-lg transform transition duration-300 hover:scale-105 hover:shadow-2xl cursor-pointer"
             >
-              Learn More
-            </button>
-          </div>
-        ))}
+              <div className="mb-4">
+                <img
+                  src={job.image}
+                  alt={job.title}
+                  className="w-full h-48 object-cover rounded-t-lg"
+                />
+              </div>
+              <h2 className="text-lg font-semibold text-blue-600 mb-2">
+                {job.title}
+              </h2>
+              <p className="text-gray-600">{job.description}</p>
+            </div>
+          ))}
+        </div>
       </div>
 
       {showModal && (
         <div
-          className={`fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50 transition-opacity duration-300 ${
+          className={`fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50 transition-opacity duration-200 ${
             isVisible ? "opacity-100" : "opacity-0"
           }`}
         >
           <div
-            className={`bg-white rounded-lg shadow-lg p-6 max-w-lg mx-auto transform transition-all duration-300 ${
+            className={`bg-white rounded-lg shadow-lg p-6 max-w-lg mx-auto transform transition-all duration-200 ${
               isVisible ? "opacity-100 scale-100" : "opacity-0 scale-95"
             }`}
           >
             <h2 className="text-2xl font-semibold text-blue-600 mb-4">
               {modalContent?.title}
             </h2>
-            <p className="text-gray-700 mb-6">
+            <p className="text-gray-700 text-lg mb-6">
               {modalContent?.modalDescription}
             </p>
             <button
-              className="bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700 transition duration-300"
+              className="bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700 transition duration-200"
               onClick={handleClose}
             >
               Close

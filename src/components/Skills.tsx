@@ -7,17 +7,17 @@ export default function Skills() {
         My Top Skills
       </h2>
       <hr className="border-t-2 border-blue-700 w-1/4 mx-auto mt-2 mb-8" />
-      <div className="grid grid-cols-2 md:grid-cols-5 gap-4 px-4 max-w-screen-lg mx-auto">
+      <div className="grid grid-cols-2 md:grid-cols-5 gap-6 px-4 max-w-screen-lg mx-auto">
         {skillsData.map((skill, index) => (
           <div
             key={index}
-            className="flex cursor-pointer items-center justify-center p-2 bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-md transition-shadow"
+            className="flex cursor-pointer items-center justify-center p-2 bg-white border border-gray-200 rounded-lg hover:shadow-md hover:scale-110 transition-transform transform"
           >
             <img
               src={skill.src}
               alt={skill.alt}
               loading="lazy"
-              className="w-22 h-20 object-cover transition-transform transform hover:scale-110"
+              className="w-22 h-20 object-cover"
             />
           </div>
         ))}

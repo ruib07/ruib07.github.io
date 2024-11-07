@@ -1,4 +1,4 @@
-import Avatar from "../assets/SkillsIcons/avatar.png";
+import Avatar from "../assets/avatar.png";
 
 export default function AboutMe() {
   return (
