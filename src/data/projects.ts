@@ -1,4 +1,5 @@
 import TheKnifeVideo from "../assets/ProjectsImgs/TheKnifeVideo.mp4";
+import TaskQuestImg from "../assets/ProjectsImgs/TaskQuest.jpg";
 import WeatherAppImg from "../assets/ProjectsImgs/WeatherApp.webp";
 import ProEventosImg from "../assets/ProjectsImgs/event.jpg";
 import LanchesMacImg from "../assets/ProjectsImgs/burguer-store.webp";
@@ -14,6 +15,17 @@ export const projects = [
       { label: "View Source", url: "https://github.com/ruib07/TheKnife" },
     ],
   },
+  {
+    title: "TaskQuest",
+    description:
+      "Streamline your business projects effortlessly. Create, organize, and manage projects with ease. Add team members, exchange messages, categorize tasks, and create detailed to-dos like coding or database planning within each category. Empower collaboration and boost productivity with this intuitive tool.",
+    techStack: ["React", "Tailwind CSS", "NodeJS", "PostgreSQL", "PostgreSQL"],
+    imageSrc: TaskQuestImg,
+    sourceLinks: [
+      { label: "View Source", url: "https://github.com/ruib07/TaskQuest" },
+    ],
+  },
+
   {
     title: "WeatherApp",
     description:
