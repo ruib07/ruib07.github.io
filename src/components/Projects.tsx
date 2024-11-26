@@ -22,7 +22,7 @@ export default function Projects() {
                 <h2 className="text-3xl font-bold text-gray-800 mb-4">
                   {project.title}
                 </h2>
-                <p className="text-gray-700 mb-6 text-lg leading-relaxed">
+                <p className="text-gray-700 mb-6 text-lg leading-relaxed text-justify">
                   {project.description}
                 </p>
 

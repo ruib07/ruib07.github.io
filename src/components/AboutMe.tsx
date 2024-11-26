@@ -29,7 +29,7 @@ export default function AboutMe() {
           Currently a{" "}
           <span className="text-blue-600">Full-Stack Developer</span>
         </h1>
-        <p className="text-gray-600 max-w-xl mx-auto leading-relaxed">
+        <p className="text-gray-600 max-w-xl mx-auto leading-relaxed text-justify">
           As a dedicated Full-Stack Developer, I am driven by a relentless
           curiosity for new programming languages and technologies. I am
           committed to staying ahead of industry trends, continuously learning,

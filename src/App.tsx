@@ -4,8 +4,8 @@ import ScrollToTop from "./hooks/ScrollToTop";
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
-import Footer from "./components/shared/Footer";
-import Header from "./components/shared/Header";
+import Footer from "./layouts/Footer";
+import Header from "./layouts/Header";
 
 export default function App() {
   return (
