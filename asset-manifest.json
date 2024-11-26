@@ -1,22 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.dff441fc.css",
-    "main.js": "/static/js/main.14676d2e.js",
+    "main.css": "/static/css/main.2e159959.css",
+    "main.js": "/static/js/main.7da47b57.js",
     "static/media/TheKnifeVideo.mp4": "/static/media/TheKnifeVideo.039a5e9470e722c00039.mp4",
     "static/media/TaskQuest.jpg": "/static/media/TaskQuest.9ff83bd35355e2108f0a.jpg",
     "static/media/techconsultant.webp": "/static/media/techconsultant.ca418432570a6bd94ce8.webp",
-    "static/media/event.jpg": "/static/media/event.d25ef1d8cb2cec60bc63.jpg",
     "static/media/avatar.png": "/static/media/avatar.2f47ea4c9cf7c09f1ae4.png",
     "static/media/ittechnician.png": "/static/media/ittechnician.3dbe6e71f9cb483ef70d.png",
     "static/media/webdeveloper.png": "/static/media/webdeveloper.31259b9a83188c665e0d.png",
     "static/media/react.png": "/static/media/react.e1812a1f0a1f36761a4d.png",
     "static/media/postgresql.png": "/static/media/postgresql.81bfe948d56143c52c21.png",
+    "static/media/sqlserver.png": "/static/media/sqlserver.a4ba4125aadc50241c26.png",
     "static/media/backenddev.jpg": "/static/media/backenddev.a60884511cc627a21309.jpg",
     "static/media/burguer-store.webp": "/static/media/burguer-store.548b464dec15cd9f3825.webp",
     "static/media/dotnetdeveloper.jpg": "/static/media/dotnetdeveloper.8b19b6c5b06e6444b130.jpg",
     "static/media/csharp.svg.png": "/static/media/csharp.svg.7fcacff39db033c9a776.png",
     "static/media/nodejs.png": "/static/media/nodejs.4f7e234679b8d5d41314.png",
-    "static/media/docker.png": "/static/media/docker.798ebcea92f7977a31a6.png",
     "static/media/css.png": "/static/media/css.e0f62aab3ad87ee97659.png",
     "static/media/javascript.png": "/static/media/javascript.69134e35facca4f3054e.png",
     "static/media/html.png": "/static/media/html.9364f7cab1b6b3d4f188.png",
@@ -25,11 +24,11 @@
     "static/media/WeatherApp.webp": "/static/media/WeatherApp.e157ddf9fc23cc0fc0bc.webp",
     "static/media/linkedin.webp": "/static/media/linkedin.aa0a6b93275c33e6ecab.webp",
     "index.html": "/index.html",
-    "main.dff441fc.css.map": "/static/css/main.dff441fc.css.map",
-    "main.14676d2e.js.map": "/static/js/main.14676d2e.js.map"
+    "main.2e159959.css.map": "/static/css/main.2e159959.css.map",
+    "main.7da47b57.js.map": "/static/js/main.7da47b57.js.map"
   },
   "entrypoints": [
-    "static/css/main.dff441fc.css",
-    "static/js/main.14676d2e.js"
+    "static/css/main.2e159959.css",
+    "static/js/main.7da47b57.js"
   ]
 }
