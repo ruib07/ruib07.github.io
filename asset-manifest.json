@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.cb9c0eb6.css",
-    "main.js": "/static/js/main.f6503021.js",
+    "main.css": "/static/css/main.ebc63aee.css",
+    "main.js": "/static/js/main.77d70901.js",
     "static/media/TheKnifeVideo.mp4": "/static/media/TheKnifeVideo.039a5e9470e722c00039.mp4",
     "static/media/TaskQuest.jpg": "/static/media/TaskQuest.9ff83bd35355e2108f0a.jpg",
     "static/media/techconsultant.webp": "/static/media/techconsultant.ca418432570a6bd94ce8.webp",
@@ -24,11 +24,11 @@
     "static/media/WeatherApp.webp": "/static/media/WeatherApp.e157ddf9fc23cc0fc0bc.webp",
     "static/media/linkedin.webp": "/static/media/linkedin.aa0a6b93275c33e6ecab.webp",
     "index.html": "/index.html",
-    "main.cb9c0eb6.css.map": "/static/css/main.cb9c0eb6.css.map",
-    "main.f6503021.js.map": "/static/js/main.f6503021.js.map"
+    "main.ebc63aee.css.map": "/static/css/main.ebc63aee.css.map",
+    "main.77d70901.js.map": "/static/js/main.77d70901.js.map"
   },
   "entrypoints": [
-    "static/css/main.cb9c0eb6.css",
-    "static/js/main.f6503021.js"
+    "static/css/main.ebc63aee.css",
+    "static/js/main.77d70901.js"
   ]
 }
