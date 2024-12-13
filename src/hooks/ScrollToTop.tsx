@@ -24,6 +24,7 @@ export default function ScrollToTop() {
       className={`fixed bottom-8 right-8 bg-blue-600 text-white dark:bg-purple-400 rounded-full w-12 h-12 flex items-center justify-center shadow-lg transition-opacity duration-400 ease-in-out ${
         windowScrolled ? "opacity-100" : "opacity-0 invisible"
       } sm:block hidden`}
+      style={{ zIndex: 50 }}
     >
       <button
         onClick={scrollToTop}

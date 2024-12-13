@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import {
   Disclosure,
   DisclosureButton,
@@ -38,16 +38,20 @@ export default function Header() {
       <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
         <div className="relative flex h-16 items-center justify-between">
           <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
-            <DisclosureButton className="group relative inline-flex items-center justify-center rounded-md p-2 text-blue-400 hover:bg-blue-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+            <DisclosureButton className="group relative inline-flex items-center justify-center rounded-md p-2 text-blue-400 hover:bg-blue-700 dark:hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
               <span className="absolute -inset-0.5" />
               <span className="sr-only">Open main menu</span>
               <Bars3Icon
                 aria-hidden="true"
-                className="block h-6 w-6 group-data-[open]:hidden"
+                className={`block h-6 w-6 group-data-[open]:hidden transition-colors ${
+                  darkMode ? "text-gray-300" : "text-white"
+                }`}
               />
               <XMarkIcon
                 aria-hidden="true"
-                className="hidden h-6 w-6 group-data-[open]:block"
+                className={`hidden h-6 w-6 group-data-[open]:block transition-colors ${
+                  darkMode ? "text-gray-300" : "text-white"
+                }`}
               />
             </DisclosureButton>
           </div>
@@ -103,20 +107,24 @@ export default function Header() {
             >
               <div
                 className={`flex items-center justify-between w-16 h-8 rounded-full p-1 transition-all duration-300 ${
-                  darkMode ? "bg-gray-700" : "bg-yellow-400"
+                  darkMode ? "bg-gray-700" : "bg-gray-100"
                 }`}
               >
                 <span
-                  className={`text-xl transition-all duration-300 ${
-                    darkMode ? "translate-x-0" : "-translate-x-8"
-                  } ${darkMode ? "visible" : "invisible"}`}
+                  className={`text-xl absolute transition-transform duration-300 ${
+                    darkMode
+                      ? "translate-x-8 opacity-100"
+                      : "translate-x-0 opacity-0"
+                  }`}
                 >
                   🌙
                 </span>
                 <span
-                  className={`text-xl transition-all duration-300 ${
-                    darkMode ? "translate-x-8" : "translate-x-0"
-                  } ${darkMode ? "invisible" : "visible"}`}
+                  className={`text-xl absolute transition-transform duration-300 ${
+                    darkMode
+                      ? "translate-x-0 opacity-0"
+                      : "translate-x-8 opacity-100"
+                  }`}
                 >
                   ☀️
                 </span>
