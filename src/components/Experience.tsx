@@ -2,26 +2,14 @@ import { useState } from "react";
 import { jobs } from "../data/experience";
 
 export default function Experience() {
-  const [showModal, setShowModal] = useState(false);
-  const [modalContent, setModalContent] = useState<{
-    title: string;
-    modalDescription: string;
-  } | null>(null);
+  const [activeJobs, setActiveJobs] = useState<string[]>([]);
 
-  const [isVisible, setIsVisible] = useState(false);
-
-  const handleClose = () => {
-    setIsVisible(false);
-    setTimeout(() => {
-      setShowModal(false);
-      setModalContent(null);
-    }, 300);
-  };
-
-  const handleShow = (job: { title: string; modalDescription: string }) => {
-    setModalContent(job);
-    setShowModal(true);
-    setTimeout(() => setIsVisible(true), 10);
+  const handleToggle = (title: string) => {
+    setActiveJobs((prevActiveJobs) =>
+      prevActiveJobs.includes(title)
+        ? prevActiveJobs.filter((job) => job !== title)
+        : [...prevActiveJobs, title]
+    );
   };
 
   return (
@@ -34,58 +22,43 @@ export default function Experience() {
       </h1>
       <hr className="border-t-2 border-blue-700 dark:border-purple-500 w-1/4 mx-auto mt-2 mb-8" />
 
-      <div className="max-w-7xl mx-auto px-4 lg:px-8">
-        <div className="grid gap-10 grid-cols-1 sm:grid-cols-2">
-          {jobs.map((job) => (
+      <div className="max-w-4xl mx-auto px-4 lg:px-8">
+        {jobs.map((job) => (
+          <div
+            key={job.title}
+            className="mb-6 border-b border-gray-300 dark:border-gray-700 transform transition duration-300 hover:scale-105"
+          >
             <div
-              key={job.title}
-              onClick={() => handleShow(job)}
-              className="bg-white dark:bg-gray-800 rounded-lg p-6 border border-gray-200 dark:border-gray-700 hover:shadow-lg transform transition duration-300 hover:scale-105 hover:shadow-2xl cursor-pointer"
+              onClick={() => handleToggle(job.title)}
+              className="cursor-pointer py-4 flex items-center justify-between"
             >
-              <div className="mb-4">
-                <img
-                  src={job.image}
-                  alt={job.title}
-                  className="w-full h-48 object-cover rounded-t-lg"
-                />
-              </div>
-              <h2 className="text-lg font-semibold text-blue-600 dark:text-purple-400 mb-2">
+              <h2 className="text-xl font-semibold text-blue-600 dark:text-purple-400">
                 {job.title}
               </h2>
-              <p className="text-gray-600 dark:text-gray-400">
-                {job.description}
-              </p>
+              <span
+                className={`text-blue-600 dark:text-purple-400 transform transition-transform duration-500 ${
+                  activeJobs.includes(job.title) ? "rotate-180" : "rotate-0"
+                }`}
+              >
+                ▼
+              </span>
             </div>
-          ))}
-        </div>
-      </div>
-
-      {showModal && (
-        <div
-          className={`fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50 transition-opacity duration-200 ${
-            isVisible ? "opacity-100" : "opacity-0"
-          }`}
-        >
-          <div
-            className={`bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 max-w-lg mx-auto transform transition-all duration-200 ${
-              isVisible ? "opacity-100 scale-100" : "opacity-0 scale-95"
-            }`}
-          >
-            <h2 className="text-2xl font-semibold text-blue-600 dark:text-purple-400 mb-4">
-              {modalContent?.title}
-            </h2>
-            <p className="text-gray-700 dark:text-gray-300 mb-6 text-justify">
-              {modalContent?.modalDescription}
-            </p>
-            <button
-              className="bg-blue-600 dark:bg-purple-500 text-white py-2 px-4 rounded hover:bg-blue-700 dark:hover:bg-purple-600 transition duration-200"
-              onClick={handleClose}
+            <div
+              className={`overflow-hidden transition-all duration-500 ease-in-out ${
+                activeJobs.includes(job.title)
+                  ? "max-h-screen opacity-100"
+                  : "max-h-0 opacity-0"
+              }`}
             >
-              Close
-            </button>
+              <div className="p-4 bg-gray-100 dark:bg-gray-800 rounded-md">
+                <p className="text-gray-700 dark:text-gray-300 text-justify">
+                  {job.modalDescription}
+                </p>
+              </div>
+            </div>
           </div>
-        </div>
-      )}
+        ))}
+      </div>
     </div>
   );
 }

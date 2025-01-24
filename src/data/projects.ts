@@ -8,7 +8,7 @@ export const projects = [
     title: "TheKnife",
     description:
       "TheKnife aims to rival TheFork by offering users the ability to make restaurant reservations and allowing restaurant managers to register and manage their restaurants.",
-    techStack: ["Angular", "HTML", "CSS", "Typescript", "Javascript", "Bootstrap", "PostgreSQL", "Docker"],
+    techStack: ["Angular", "Bootstrap", "NodeJS", "PostgreSQL", "Docker"],
     videoSrc: TheKnifeVideo,
     sourceLinks: [
       { label: "View Source", url: "https://github.com/ruib07/TheKnife" },
@@ -18,7 +18,7 @@ export const projects = [
     title: "TaskQuest",
     description:
       "Streamline your business projects effortlessly. Create, organize, and manage projects with ease. Add team members, exchange messages, categorize tasks, and create detailed to-dos like coding or database planning within each category. Empower collaboration and boost productivity with this intuitive tool.",
-    techStack: ["React", "Tailwind CSS", "Typescript", "Javascript", "NodeJS", "PostgreSQL"],
+    techStack: ["React", "Tailwind CSS", "NodeJS", "PostgreSQL", "Docker"],
     imageSrc: TaskQuestImg,
     sourceLinks: [
       { label: "View Source", url: "https://github.com/ruib07/TaskQuest" },
