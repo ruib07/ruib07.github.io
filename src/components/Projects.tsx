@@ -16,14 +16,11 @@ export default function Projects() {
       <div className="flex flex-col items-center gap-8">
         {projects.map((project, index) => (
           <div
-            className="bg-gray-100 dark:bg-gray-800 shadow-lg rounded-lg overflow-hidden flex flex-col md:flex-row max-w-7xl w-full"
+            className="bg-gray-100 dark:bg-gray-800 shadow-lg rounded-lg overflow-hidden flex flex-col md:flex-row max-w-6xl w-full"
             key={index}
           >
             <div className="p-8 flex-1 flex flex-col justify-between">
               <div>
-                <h3 className="text-lg font-semibold text-blue-600 dark:text-purple-400 mb-2">
-                  Featured Project
-                </h3>
                 <h2 className="text-3xl font-bold text-gray-800 dark:text-gray-100 mb-4">
                   {project.title}
                 </h2>

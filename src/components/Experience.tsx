@@ -50,7 +50,7 @@ export default function Experience() {
                   : "max-h-0 opacity-0"
               }`}
             >
-              <div className="p-4 bg-gray-100 dark:bg-gray-800 rounded-md">
+              <div className="p-4">
                 <p className="text-gray-700 dark:text-gray-300 text-justify">
                   {job.modalDescription}
                 </p>

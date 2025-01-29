@@ -1,5 +1,6 @@
 import TheKnifeVideo from "../assets/ProjectsImgs/TheKnifeVideo.mp4";
 import TaskQuestImg from "../assets/ProjectsImgs/TaskQuest.jpg";
+import BookSwapImg from "../assets/ProjectsImgs/BookSwap.webp";
 import WeatherAppImg from "../assets/ProjectsImgs/WeatherApp.webp";
 import LanchesMacImg from "../assets/ProjectsImgs/burguer-store.webp";
 
@@ -24,7 +25,16 @@ export const projects = [
       { label: "View Source", url: "https://github.com/ruib07/TaskQuest" },
     ],
   },
-
+  {
+    title: "BookSwap",
+    description:
+      "BookSwap is a web app that allows users to exchange books with each other, making it easy to share and discover new reads. Users can manage their books by adding images, deleting images, removing books, and creating new book entries. The platform also includes a review system, enabling users to share their opinions and explore feedback from others. Each user has a dedicated profile area where they can view and edit personal details, manage their books, and check their reviews.",
+    techStack: ["React", "Tailwind CSS", "NodeJS", "PostgreSQL", "Docker"],
+    imageSrc: BookSwapImg,
+    sourceLinks: [
+      { label: "View Source", url: "https://github.com/ruib07/BookSwap" },
+    ],
+  },
   {
     title: "WeatherApp",
     description:
