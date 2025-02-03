@@ -1,10 +1,11 @@
 {
   "files": {
-    "main.css": "/static/css/main.2f5dc474.css",
-    "main.js": "/static/js/main.49a9faf7.js",
+    "main.css": "/static/css/main.c654ade4.css",
+    "main.js": "/static/js/main.2d694cab.js",
     "static/media/TheKnifeVideo.mp4": "/static/media/TheKnifeVideo.039a5e9470e722c00039.mp4",
     "static/media/TaskQuest.jpg": "/static/media/TaskQuest.9ff83bd35355e2108f0a.jpg",
-    "static/media/BookSwap.webp": "/static/media/BookSwap.20b422139e92dedb4ccd.webp",
+    "static/media/BookSwap.png": "/static/media/BookSwap.de4dedb70b747c044700.png",
+    "static/media/CreativeHub.png": "/static/media/CreativeHub.a1fe25b7795e4cd2d1aa.png",
     "static/media/myphoto.jpeg": "/static/media/myphoto.2cf7fa816437e32c6068.jpeg",
     "static/media/react.png": "/static/media/react.e1812a1f0a1f36761a4d.png",
     "static/media/postgresql.png": "/static/media/postgresql.81bfe948d56143c52c21.png",
@@ -17,14 +18,13 @@
     "static/media/html.png": "/static/media/html.9364f7cab1b6b3d4f188.png",
     "static/media/typescript.png": "/static/media/typescript.0a952d771a62196d358b.png",
     "static/media/apirest.png": "/static/media/apirest.05af5fffaabbc460cc54.png",
-    "static/media/WeatherApp.webp": "/static/media/WeatherApp.e157ddf9fc23cc0fc0bc.webp",
     "static/media/linkedin.webp": "/static/media/linkedin.aa0a6b93275c33e6ecab.webp",
     "index.html": "/index.html",
-    "main.2f5dc474.css.map": "/static/css/main.2f5dc474.css.map",
-    "main.49a9faf7.js.map": "/static/js/main.49a9faf7.js.map"
+    "main.c654ade4.css.map": "/static/css/main.c654ade4.css.map",
+    "main.2d694cab.js.map": "/static/js/main.2d694cab.js.map"
   },
   "entrypoints": [
-    "static/css/main.2f5dc474.css",
-    "static/js/main.49a9faf7.js"
+    "static/css/main.c654ade4.css",
+    "static/js/main.2d694cab.js"
   ]
 }
