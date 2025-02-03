@@ -14,7 +14,7 @@ export default function Skills() {
         {skillsData.map((skill, index) => (
           <div
             key={index}
-            className="flex cursor-pointer items-center justify-center p-2 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg hover:shadow-md hover:scale-110 transition-transform transform"
+            className="flex cursor-pointer items-center justify-center p-2 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg hover:shadow-md hover:shadow-gray-300 dark:hover:shadow-gray-600 hover:scale-110 transition-transform transform"
           >
             <img
               src={skill.src}

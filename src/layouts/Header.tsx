@@ -15,6 +15,16 @@ function classNames(...classes: string[]) {
 
 export default function Header() {
   const [darkMode, setDarkMode] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 50);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   useEffect(() => {
     const savedTheme = localStorage.getItem("theme");
@@ -33,12 +43,22 @@ export default function Header() {
   return (
     <Disclosure
       as="nav"
-      className="fixed top-0 w-full bg-blue-600 dark:bg-gray-900 z-10"
+      className="fixed top-0 w-full bg-blue-600 dark:bg-gray-900 z-10 transition duration-300"
     >
-      <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+      <div
+        className={`px-2 sm:px-6 lg:px-8 ${
+          isScrolled
+            ? darkMode
+              ? "bg-gray-800 bg-opacity-90 shadow-md"
+              : "bg-blue-600 bg-opacity-90 shadow-md"
+            : darkMode
+            ? "bg-gray-900"
+            : "bg-blue-700"
+        } transition-all duration-300`}
+      >
         <div className="relative flex h-16 items-center justify-between">
           <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
-            <DisclosureButton className="group relative inline-flex items-center justify-center rounded-md p-2 text-blue-400 hover:bg-blue-700 dark:hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+            <DisclosureButton className="group relative inline-flex items-center justify-center rounded-md p-2 text-blue-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
               <span className="absolute -inset-0.5" />
               <span className="sr-only">Open main menu</span>
               <Bars3Icon
@@ -89,7 +109,7 @@ export default function Header() {
                     className={classNames(
                       item.current
                         ? "bg-blue-900 text-white dark:bg-gray-700 dark:text-gray-100"
-                        : "text-gray-100 hover:bg-blue-700 hover:text-white dark:text-gray-300 dark:hover:bg-gray-700 dark:hover:text-white",
+                        : "text-gray-100 hover:text-gray-300 dark:hover:text-purple-400 dark:text-gray-300",
                       "rounded-md px-3 py-2 text-base font-medium"
                     )}
                   >
@@ -160,7 +180,7 @@ export default function Header() {
                 className={classNames(
                   item.current
                     ? "bg-blue-900 text-white dark:bg-gray-700 dark:text-gray-100"
-                    : "text-gray-100 hover:bg-blue-700 hover:text-white dark:text-gray-300 dark:hover:bg-gray-700 dark:hover:text-white",
+                    : "text-gray-100 hover:text-gray-300 dark:text-gray-300 dark:hover:text-purple-400",
                   "block rounded-md px-3 py-2 text-base font-medium"
                 )}
               >

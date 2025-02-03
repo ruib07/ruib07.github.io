@@ -1,7 +1,7 @@
 import TheKnifeVideo from "../assets/ProjectsImgs/TheKnifeVideo.mp4";
 import TaskQuestImg from "../assets/ProjectsImgs/TaskQuest.jpg";
-import BookSwapImg from "../assets/ProjectsImgs/BookSwap.webp";
-import WeatherAppImg from "../assets/ProjectsImgs/WeatherApp.webp";
+import CreativeHubImg from "../assets/ProjectsImgs/CreativeHub.png";
+import BookSwapImg from "../assets/ProjectsImgs/BookSwap.png";
 import LanchesMacImg from "../assets/ProjectsImgs/burguer-store.webp";
 
 export const projects = [
@@ -26,23 +26,23 @@ export const projects = [
     ],
   },
   {
+    title: "CreativeHub",
+    description:
+      "CreativeHub is a web app for developers, designers, and photographers to share their projects. Users can like, comment, and track engagement while managing their profiles and activity. Get insights on views, likes, and comments to see how your work resonates.",
+    techStack: ["React", "Tailwind CSS", "NodeJS", "PostgreSQL", "Docker"],
+    imageSrc: CreativeHubImg,
+    sourceLinks: [
+      { label: "View Source", url: "https://github.com/ruib07/CreativeHub" },
+    ],
+  },
+  {
     title: "BookSwap",
     description:
-      "BookSwap is a web app that allows users to exchange books with each other, making it easy to share and discover new reads. Users can manage their books by adding images, deleting images, removing books, and creating new book entries. The platform also includes a review system, enabling users to share their opinions and explore feedback from others. Each user has a dedicated profile area where they can view and edit personal details, manage their books, and check their reviews.",
+      "BookSwap is a web app that allows users to exchange books with each other, making it easy to share and discover new reads. Users can manage their books by adding images, deleting images, removing books, and creating a book. The platform also includes a review system, enabling users to share their opinions and explore feedback from others. Each user has a dedicated profile area where they can view and edit personal details, manage their books, and check their reviews.",
     techStack: ["React", "Tailwind CSS", "NodeJS", "PostgreSQL", "Docker"],
     imageSrc: BookSwapImg,
     sourceLinks: [
       { label: "View Source", url: "https://github.com/ruib07/BookSwap" },
-    ],
-  },
-  {
-    title: "WeatherApp",
-    description:
-      "Explore global weather conditions effortlessly. Get real-time updates on temperature, climate, and hourly forecasts for any city worldwide.",
-    techStack: ["HTML", "CSS", "JavaScript", "Public API"],
-    imageSrc: WeatherAppImg,
-    sourceLinks: [
-      { label: "View Source", url: "https://github.com/ruib07/WeatherApp" },
     ],
   },
   {
