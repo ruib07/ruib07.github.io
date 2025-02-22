@@ -1,8 +1,7 @@
-import TheKnifeVideo from "../assets/ProjectsImgs/TheKnifeVideo.mp4";
-import TaskQuestImg from "../assets/ProjectsImgs/TaskQuest.jpg";
-import CreativeHubImg from "../assets/ProjectsImgs/CreativeHub.png";
-import BookSwapImg from "../assets/ProjectsImgs/BookSwap.png";
-import LanchesMacImg from "../assets/ProjectsImgs/burguer-store.webp";
+import TheKnifeVideo from "/assets/ProjectsImgs/TheKnifeVideo.mp4";
+import TaskQuestImg from "/assets/ProjectsImgs/TaskQuest.jpg";
+import CreativeHubImg from "/assets/ProjectsImgs/CreativeHub.jpg";
+import BookSwapImg from "/assets/ProjectsImgs/SkillSwap.jpg";
 
 export const projects = [
   {
@@ -36,23 +35,19 @@ export const projects = [
     ],
   },
   {
-    title: "BookSwap",
+    title: "SkillSwap",
     description:
-      "BookSwap is a web app that allows users to exchange books with each other, making it easy to share and discover new reads. Users can manage their books by adding images, deleting images, removing books, and creating a book. The platform also includes a review system, enabling users to share their opinions and explore feedback from others. Each user has a dedicated profile area where they can view and edit personal details, manage their books, and check their reviews.",
-    techStack: ["React", "Tailwind CSS", "NodeJS", "PostgreSQL", "Docker"],
+      "Our app allows users to request private training sessions with mentors in various skills. Similar to platforms like Fiverr, users can find a mentor based on their expertise, request a session, and make a payment to confirm the booking. Mentors can manage their sessions, accept requests, and add skills to their profiles. Users can edit their information and provide feedback. Mentors can track their sessions, manage payments, and receive valuable reviews to improve their services.",
+    techStack: [
+      "React",
+      "Tailwind CSS",
+      ".NET Web API",
+      "Ef Core",
+      "SQL Server",
+    ],
     imageSrc: BookSwapImg,
     sourceLinks: [
-      { label: "View Source", url: "https://github.com/ruib07/BookSwap" },
-    ],
-  },
-  {
-    title: "LanchesMac",
-    description:
-      "This website is an burguer store where the user can buy burguers. The website contains filters, categories, a carrousel slide, product page, shop cart, checkout, login, register, admin area.",
-    techStack: ["ASP.NET MVC", "HTML", "Bootstrap", "EF Core", "SQL Server"],
-    imageSrc: LanchesMacImg,
-    sourceLinks: [
-      { label: "View Source", url: "https://github.com/ruib07/LanchesMac" },
+      { label: "View Source", url: "https://github.com/ruib07/SkillSwap" },
     ],
   },
 ];

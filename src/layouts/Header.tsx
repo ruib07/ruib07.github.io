@@ -7,7 +7,6 @@ import {
 } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { navigation } from "../data/navigation";
-import Icon from "../assets/logo.png";
 
 function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(" ");
@@ -76,21 +75,6 @@ export default function Header() {
             </DisclosureButton>
           </div>
 
-          <div className="hidden sm:flex items-center">
-            <a
-              href="#start"
-              onClick={(e) => {
-                e.preventDefault();
-                const target = document.querySelector("#start");
-                if (target) {
-                  target.scrollIntoView({ behavior: "smooth" });
-                }
-              }}
-            >
-              <img alt="MyPortfolioIcon" src={Icon} className="h-8 w-auto" />
-            </a>
-          </div>
-
           <div className="flex flex-1 justify-center items-center">
             <div className="hidden sm:block">
               <div className="flex space-x-4">
@@ -126,7 +110,7 @@ export default function Header() {
               className="flex items-center justify-center p-2 text-blue-300 dark:text-gray-300 focus:outline-none"
             >
               <div
-                className={`flex items-center justify-between w-16 h-8 rounded-full p-1 transition-all duration-300 ${
+                className={`flex items-center justify-between w-16 h-8 rounded-full p-1 cursor-pointer transition-all duration-300 ${
                   darkMode ? "bg-gray-700" : "bg-gray-100"
                 }`}
               >
