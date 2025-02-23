@@ -73,7 +73,7 @@ export default function App() {
         <h1 className="text-3xl font-semibold text-blue-600 dark:text-purple-400">
           Work Experience
         </h1>
-        <hr className="border-t-2 border-blue-700 dark:border-purple-500 w-1/4 mx-auto mt-2 mb-8" />
+        <hr className="border-t-2 border-blue-700 dark:border-purple-500 w-24 mx-auto mt-3 mb-8" />
 
         <div className="max-w-4xl mx-auto px-4 lg:px-8">
           {jobs.map((job) => (
@@ -122,7 +122,7 @@ export default function App() {
         <h2 className="text-3xl font-semibold text-blue-600 dark:text-purple-400 text-center">
           My Top Skills
         </h2>
-        <hr className="border-t-2 border-blue-700 dark:border-purple-500 w-1/4 mx-auto mt-2 mb-8" />
+        <hr className="border-t-2 border-blue-700 dark:border-purple-500 w-24 mx-auto mt-3 mb-8" />
         <div className="grid grid-cols-2 md:grid-cols-5 gap-6 px-4 max-w-screen-lg mx-auto">
           {skillsData.map((skill, index) => (
             <div
@@ -149,7 +149,7 @@ export default function App() {
           <h2 className="text-3xl font-semibold text-blue-700 dark:text-purple-500">
             Main Projects
           </h2>
-          <hr className="border-t-2 border-blue-700 dark:border-purple-500 w-1/4 mx-auto mt-2" />
+          <hr className="border-t-2 border-blue-700 dark:border-purple-500 w-24 mx-auto mt-3" />
         </div>
 
         <div className="flex flex-col items-center gap-8">
@@ -226,7 +226,7 @@ export default function App() {
           <h2 className="text-3xl font-semibold text-blue-600 dark:text-purple-500">
             Contact
           </h2>
-          <hr className="border-t-2 border-blue-600 dark:border-purple-500 w-1/4 mx-auto mt-2" />
+          <hr className="border-t-2 border-blue-600 dark:border-purple-500 w-24 mx-auto mt-3" />
         </div>
 
         <div className="text-center mb-6">
