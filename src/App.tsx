@@ -104,7 +104,10 @@ export default function App() {
                 }`}
               >
                 <div className="p-4">
-                  <p className="text-gray-700 dark:text-gray-300 text-justify">
+                  <p className="text-blue-500 dark:text-purple-300 text-justify">
+                    {job.date}
+                  </p>
+                  <p className="mt-2 text-gray-700 dark:text-gray-300 text-justify">
                     {job.modalDescription}
                   </p>
                 </div>
