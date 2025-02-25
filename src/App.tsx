@@ -7,8 +7,9 @@ import { useState } from "react";
 import { skillsData } from "./data/skills";
 import { projects } from "./data/projects";
 
-import Avatar from "/assets/myphoto.jpeg";
+import MyPicture from "/assets/myphoto.jpeg";
 import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
+import { TypeAnimation } from "react-type-animation";
 
 export default function App() {
   const [activeJobs, setActiveJobs] = useState<string[]>([]);
@@ -33,8 +34,8 @@ export default function App() {
         <div className="flex flex-col md:flex-row items-center justify-center gap-8 mb-12">
           <div className="w-40 h-40 rounded-full overflow-hidden border-4 border-blue-200 dark:border-gray-700 shadow-lg">
             <img
-              src={Avatar}
-              alt="Avatar with Laptop"
+              src={MyPicture}
+              alt="MyPicture"
               className="w-full h-full object-cover"
             />
           </div>
@@ -52,7 +53,13 @@ export default function App() {
           <h1 className="text-2xl font-semibold text-gray-800 dark:text-gray-100 mb-4">
             Currently a{" "}
             <span className="text-blue-600 dark:text-purple-400">
-              Full-Stack Developer
+              <TypeAnimation
+                sequence={["Full-Stack Developer", 1000]}
+                wrapper="span"
+                speed={50}
+                style={{ display: "inline-block" }}
+                repeat={Infinity}
+              />
             </span>
           </h1>
           <p className="text-gray-600 dark:text-gray-400 max-w-xl mx-auto leading-relaxed text-justify">
@@ -123,7 +130,7 @@ export default function App() {
         id="skills"
       >
         <h2 className="text-3xl font-semibold text-blue-600 dark:text-purple-400 text-center">
-          My Top Skills
+          Main Skills
         </h2>
         <hr className="border-t-2 border-blue-700 dark:border-purple-500 w-24 mx-auto mt-3 mb-8" />
         <div className="grid grid-cols-2 md:grid-cols-5 gap-6 px-4 max-w-screen-lg mx-auto">
