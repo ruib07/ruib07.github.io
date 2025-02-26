@@ -1,13 +1,12 @@
-import ReactImg from "/assets/SkillsIcons/react.png";
-import NodeJsImg from "/assets/SkillsIcons/nodejs.png";
-import NetImg from "/assets/SkillsIcons/net.png";
-import PostgreSQLImg from "/assets/SkillsIcons/postgresql.png";
-import SQLServerImg from "/assets/SkillsIcons/sqlserver.png";
+import { FaReact } from "react-icons/fa6";
+import { AiOutlineDotNet } from "react-icons/ai";
+import { DiMsqlServer } from "react-icons/di";
+import { TbBrandCSharp, TbBrandTypescript } from "react-icons/tb";
 
 export const skillsData = [
-  { src: ReactImg, alt: "React" },
-  { src: NetImg, alt: "NET" },
-  { src: NodeJsImg, alt: "Nodejs" },
-  { src: SQLServerImg, alt: "SQLServer" },
-  { src: PostgreSQLImg, alt: "PostgreSQL" },
+  { src: FaReact },
+  { src: TbBrandTypescript },
+  { src: TbBrandCSharp },
+  { src: AiOutlineDotNet },
+  { src: DiMsqlServer },
 ];
