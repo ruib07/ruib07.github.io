@@ -1,11 +1,12 @@
 import { createElement } from "react";
-import NavigateHome from "../components/GoBack";
 import { projects } from "../data/projects";
+import { useNavigate } from "react-router-dom";
 
 export default function Projects() {
+  const navigate = useNavigate();
+
   return (
     <div className="mt-16">
-      <NavigateHome />
       <div
         className="bg-white dark:bg-gray-900 py-12 text-gray-800 dark:text-gray-300"
         id="projects"
@@ -57,7 +58,7 @@ export default function Projects() {
                       rel="noopener noreferrer"
                       className="text-blue-600 dark:text-purple-400 text-base font-medium relative transition duration-200 ease-out before:absolute 
                                   before:-bottom-0.5 before:left-0 before:w-0 before:h-0.5 before:bg-blue-600 dark:before:bg-purple-400 hover:before:w-full
-                                  hover:before:transition-all hover:scale-105"
+                                  hover:before:transition-all"
                     >
                       {link.label}
                     </a>
@@ -66,6 +67,14 @@ export default function Projects() {
               </div>
             </div>
           ))}
+        </div>
+        <div className="flex justify-center mt-12">
+          <button
+            className="bg-blue-500 dark:bg-purple-400 text-white rounded-full w-14 h-14 flex items-center justify-center shadow-lg transition-transform transform hover:scale-110 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:focus:ring-purple-500 cursor-pointer"
+            onClick={() => navigate("/")}
+          >
+            <span className="text-2xl">🏠</span>
+          </button>
         </div>
       </div>
     </div>
