@@ -1,23 +1,25 @@
-import TheKnifeImg from "/assets/ProjectsImgs/TheKnife.jpeg";
-import TaskQuestImg from "/assets/ProjectsImgs/TaskQuest.jpg";
 import CreativeHubImg from "/assets/ProjectsImgs/CreativeHub.jpg";
 import SkillSwapImg from "/assets/ProjectsImgs/SkillSwap.jpg";
-import WeatherAppImg from "/assets/ProjectsImgs/WeatherApp.webp";
+import StockFlowImg from "/assets/ProjectsImgs/StockFlow.jpg";
+import TakeATicketImg from "/assets/ProjectsImgs/TakeATicket.png";
+import TaskQuestImg from "/assets/ProjectsImgs/TaskQuest.jpg";
+import TheKnifeImg from "/assets/ProjectsImgs/TheKnife.jpeg";
 import TodoAppImg from "/assets/ProjectsImgs/ToDo.jpeg";
+import WeatherAppImg from "/assets/ProjectsImgs/WeatherApp.webp";
 
+import { AiOutlineDotNet } from "react-icons/ai";
+import { BiLogoPostgresql } from "react-icons/bi";
+import { DiMsqlServer } from "react-icons/di";
 import {
   FaAngular,
   FaBootstrap,
-  FaReact,
-  FaNodeJs,
+  FaCss3Alt,
   FaDocker,
   FaHtml5,
-  FaCss3Alt,
+  FaNodeJs,
+  FaReact,
 } from "react-icons/fa6";
-import { RiTailwindCssFill, RiJavascriptFill } from "react-icons/ri";
-import { BiLogoPostgresql } from "react-icons/bi";
-import { AiOutlineDotNet } from "react-icons/ai";
-import { DiMsqlServer } from "react-icons/di";
+import { RiJavascriptFill, RiTailwindCssFill } from "react-icons/ri";
 
 export const projects = [
   {
@@ -84,6 +86,26 @@ export const projects = [
     imageSrc: TodoAppImg,
     sourceLinks: [
       { label: "View Source", url: "https://github.com/ruib07/ToDo-App" },
+    ],
+  },
+  {
+    title: "Stockflow",
+    description:
+      "Made for stores to manage products, customers, suppliers and revenues.",
+    techStack: [FaReact, RiTailwindCssFill, AiOutlineDotNet, DiMsqlServer],
+    imageSrc: StockFlowImg,
+    sourceLinks: [
+      { label: "View Source", url: "https://github.com/ruib07/StockFlow" },
+    ],
+  },
+  {
+    title: "TakeATicket",
+    description:
+      "Mobile app to users create tickets and assign the ticket for a admin.",
+    techStack: [FaReact, FaNodeJs, BiLogoPostgresql, FaDocker],
+    imageSrc: TakeATicketImg,
+    sourceLinks: [
+      { label: "View Source", url: "https://github.com/ruib07/TakeATicket" },
     ],
   },
   {

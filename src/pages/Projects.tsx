@@ -1,6 +1,6 @@
 import { createElement } from "react";
-import { projects } from "../data/projects";
 import { useNavigate } from "react-router-dom";
+import { projects } from "../constants/projects";
 
 export default function Projects() {
   const navigate = useNavigate();

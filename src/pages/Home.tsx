@@ -2,11 +2,11 @@ import { createElement, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { TypeAnimation } from "react-type-animation";
 
-import { jobs } from "../data/experience";
-import { skillsData } from "../data/skills";
+import { jobs } from "../constants/experience";
+import { skillsData } from "../constants/skills";
 
+import { FaEnvelope, FaGithub, FaLinkedin } from "react-icons/fa";
 import MyPicture from "/assets/myphoto.jpeg";
-import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
 
 export default function Home() {
   const [activeJobs, setActiveJobs] = useState<string[]>([]);

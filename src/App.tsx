@@ -1,10 +1,10 @@
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
+import GoToTopPage from "./components/GoToTopPage";
 import ScrollToTop from "./components/ScrollToTopButton";
 import Footer from "./layouts/Footer";
 import Header from "./layouts/Header";
 import Home from "./pages/Home";
 import Projects from "./pages/Projects";
-import GoToTopPage from "./components/GoToTopPage";
 
 export default function App() {
   return (
