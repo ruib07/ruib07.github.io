@@ -64,7 +64,7 @@ export default function Home() {
             Currently a{" "}
             <span className="text-blue-500 dark:text-purple-400">
               <TypeAnimation
-                sequence={["Full-Stack Developer", 1000]}
+                sequence={["Technical Consultant", 1000]}
                 wrapper="span"
                 speed={50}
                 style={{ display: "inline-block" }}
@@ -73,11 +73,13 @@ export default function Home() {
             </span>
           </h1>
           <p className="text-gray-600 dark:text-gray-400 max-w-xl mx-auto leading-relaxed text-justify">
-            As a dedicated Full-Stack Developer, I am driven by a relentless
+            As a dedicated Software Developer, I am driven by a relentless
             curiosity for new programming languages and technologies. I am
             committed to staying ahead of industry trends, continuously
             learning, and mastering emerging tools to solve complex problems and
-            drive innovation.
+            drive innovation. Currently, I’m making an internship at Cegid
+            Primavera as a Technical Consultant, where I’m expanding my skills
+            and gaining valuable real-world experience in the field.
           </p>
           <div className="text-center mt-8">
             <a
@@ -110,9 +112,15 @@ export default function Home() {
                 onClick={() => handleToggle(job.title)}
                 className="cursor-pointer py-4 flex items-center justify-between"
               >
-                <h2 className="text-xl font-semibold text-blue-500 dark:text-purple-400">
-                  {job.title}
-                </h2>
+                <div className="flex flex-col sm:flex-row sm:justify-between w-full">
+                  <h2 className="text-xl font-semibold text-blue-500 dark:text-purple-400">
+                    {job.title}
+                  </h2>
+                  <h3 className="text-gray-500 dark:text-gray-400 me-5">
+                    {job.contractType}
+                  </h3>
+                </div>
+
                 <span
                   className={`text-blue-500 dark:text-purple-400 transform transition-transform duration-500 ${
                     activeJobs.includes(job.title) ? "rotate-180" : "rotate-0"

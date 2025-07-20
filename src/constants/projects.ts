@@ -1,7 +1,6 @@
 import CreativeHubImg from "/assets/ProjectsImgs/CreativeHub.jpg";
 import SkillSwapImg from "/assets/ProjectsImgs/SkillSwap.jpg";
 import StockFlowImg from "/assets/ProjectsImgs/StockFlow.jpg";
-import TakeATicketImg from "/assets/ProjectsImgs/TakeATicket.png";
 import TaskQuestImg from "/assets/ProjectsImgs/TaskQuest.jpg";
 import TheKnifeImg from "/assets/ProjectsImgs/TheKnife.jpeg";
 import TodoAppImg from "/assets/ProjectsImgs/ToDo.jpeg";
@@ -96,16 +95,6 @@ export const projects = [
     imageSrc: StockFlowImg,
     sourceLinks: [
       { label: "View Source", url: "https://github.com/ruib07/StockFlow" },
-    ],
-  },
-  {
-    title: "TakeATicket",
-    description:
-      "Mobile app to users create tickets and assign the ticket for a admin.",
-    techStack: [FaReact, FaNodeJs, BiLogoPostgresql, FaDocker],
-    imageSrc: TakeATicketImg,
-    sourceLinks: [
-      { label: "View Source", url: "https://github.com/ruib07/TakeATicket" },
     ],
   },
   {
