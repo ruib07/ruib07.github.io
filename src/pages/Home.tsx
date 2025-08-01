@@ -64,7 +64,7 @@ export default function Home() {
             Currently a{" "}
             <span className="text-blue-500 dark:text-purple-400">
               <TypeAnimation
-                sequence={["Technical Consultant", 1000]}
+                sequence={["Software Developer", 1000]}
                 wrapper="span"
                 speed={50}
                 style={{ display: "inline-block" }}
@@ -105,11 +105,11 @@ export default function Home() {
         <div className="max-w-4xl mx-auto px-4 lg:px-8">
           {jobs.map((job) => (
             <div
-              key={job.title}
+              key={job.id}
               className="mb-6 border-b border-gray-300 dark:border-gray-700 transform transition duration-300 hover:scale-105"
             >
               <div
-                onClick={() => handleToggle(job.title)}
+                onClick={() => handleToggle(job.id)}
                 className="cursor-pointer py-4 flex items-center justify-between"
               >
                 <div className="flex flex-col sm:flex-row sm:justify-between w-full">
@@ -123,7 +123,7 @@ export default function Home() {
 
                 <span
                   className={`text-blue-500 dark:text-purple-400 transform transition-transform duration-500 ${
-                    activeJobs.includes(job.title) ? "rotate-180" : "rotate-0"
+                    activeJobs.includes(job.id) ? "rotate-180" : "rotate-0"
                   }`}
                 >
                   ▼
@@ -131,7 +131,7 @@ export default function Home() {
               </div>
               <div
                 className={`overflow-hidden transition-all duration-500 ease-in-out ${
-                  activeJobs.includes(job.title)
+                  activeJobs.includes(job.id)
                     ? "max-h-screen opacity-100"
                     : "max-h-0 opacity-0"
                 }`}
