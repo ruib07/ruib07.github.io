@@ -16,7 +16,7 @@ export const jobs = [
     date: "02/2024 - 07/2024",
     modalDescription:
       "Developed an intial integration between two softwares using C#, .NET Core, EF Core and SQL Server. Wrote E2E tests for the code" +
-      "I wrote and made a small documentation to the people who will use the integration explaining how to install and use.",
+      " I wrote and made a small documentation to the people who will use the integration explaining how to install and use.",
   },
   {
     id: "3",
