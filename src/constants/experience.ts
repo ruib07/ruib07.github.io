@@ -6,8 +6,8 @@ export const jobs = [
     date: "07/2025 - present",
     modalDescription:
       "I am developing an internal web application designed to streamline data management and improve internal workflows. The project" +
-      " uses React and TailwindCSS on the frontend, and .NET Web API with SQL Server on the backend. I’m also implementing automated" +
-      " testing with Jest and xUnit to ensure reliability and maintainability.",
+      " uses Blazor on the frontend, and .NET Web API with SQL Server on the backend. I’m also implementing automated" +
+      " testing with bUnit and xUnit to ensure reliability and maintainability.",
   },
   {
     id: "2",
