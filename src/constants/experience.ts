@@ -5,9 +5,9 @@ export const jobs = [
     contractType: "Internship",
     date: "07/2025 - present",
     modalDescription:
-      "I am developing an internal web application designed to streamline data management and improve internal workflows. The project" +
-      " uses Blazor on the frontend, and .NET Web API with SQL Server on the backend. I’m also implementing automated" +
-      " testing with bUnit and xUnit to ensure reliability and maintainability.",
+      "I am currently developing web solutions, with a primary focus on frontend development using Blazor to create responsive, high-performance" +
+      " user interfaces connected to APIs and databases.I also work on building Web APIs with SQL Server and developing API integrations." +
+      " To ensure code quality and performance, I apply unit testing with xUnit, making sure the solutions I deliver are well- structured and reliable.",
   },
   {
     id: "2",

@@ -1,11 +1,9 @@
 import { createElement, useState } from "react";
+import { FaEnvelope, FaGithub, FaLinkedin } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import { TypeAnimation } from "react-type-animation";
-
 import { jobs } from "../constants/experience";
 import { skillsData } from "../constants/skills";
-
-import { FaEnvelope, FaGithub, FaLinkedin } from "react-icons/fa";
 import MyPicture from "/assets/myphoto.jpeg";
 
 export default function Home() {
