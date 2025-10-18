@@ -5,9 +5,13 @@ export const jobs = [
     contractType: "Internship",
     date: "07/2025 - present",
     modalDescription:
-      "I am currently developing web solutions, with a primary focus on frontend development using Blazor to create responsive, high-performance" +
-      " user interfaces connected to APIs and databases.I also work on building Web APIs with SQL Server and developing API integrations." +
-      " To ensure code quality and performance, I apply unit testing with xUnit, making sure the solutions I deliver are well- structured and reliable.",
+      "Web Applications – Developed multiple web solutions with Blazor, delivering responsive, high-performance user interfaces connected to APIs and databases.\n\n" +
+      "Mobile Application – Built a cross-platform mobile app using .NET MAUI, ensuring smooth performance and a consistent user experience.\n\n" +
+      "APIs & Integrations – Designed and implemented Web APIs, background workers, and API integrations to improve system communication and efficiency.\n\n" +
+      "Databases – Worked with EF Core and SQL Server, managing data models and optimizing database interactions for reliability and performance.\n\n" +
+      "Deployment – Created an MSI installer to simplify application deployment on client computers.\n\n" +
+      "Testing & Quality – Applied unit testing with xUnit to maintain high code quality, performance, and reliability.\n\n" +
+      "Documentation - Wrote a detailed installation and user manual to guide clients through deploying and using the solution effectively.",
   },
   {
     id: "2",
@@ -15,8 +19,10 @@ export const jobs = [
     contractType: "Internship",
     date: "02/2024 - 07/2024",
     modalDescription:
-      "Developed an intial integration between two softwares using C#, .NET Core, EF Core and SQL Server. Wrote E2E tests for the code" +
-      " I wrote and made a small documentation to the people who will use the integration explaining how to install and use.",
+      "Developed an initial integration add-on between two enterprise software systems using C#, .NET Core, EF Core, and SQL Server.\n\n" +
+      "Implemented API integrations and background workers to enable reliable and automated data synchronization between platforms.\n\n" +
+      "Conducted end-to-end (E2E) testing to ensure the accuracy, performance, and stability of the integration.\n\n" +
+      "Additionally, created a detailed installation and user manual to guide clients through deploying and using the add-on effectively.",
   },
   {
     id: "3",

@@ -18,7 +18,7 @@ export default function Projects() {
           <hr className="border-t-2 border-blue-700 dark:border-purple-500 w-24 mx-auto mt-3" />
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-4 md:px-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 px-4 md:px-8">
           {projects.map((project, index) => (
             <div
               key={index}
