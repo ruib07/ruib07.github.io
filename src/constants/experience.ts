@@ -5,13 +5,13 @@ export const jobs = [
     contractType: "Internship",
     date: "07/2025 - present",
     modalDescription:
-      "Web Applications – Developed multiple web solutions with Blazor, delivering responsive, high-performance user interfaces connected to APIs and databases.\n\n" +
-      "Mobile Application – Built a cross-platform mobile app using .NET MAUI, ensuring smooth performance and a consistent user experience.\n\n" +
-      "APIs & Integrations – Designed and implemented Web APIs, background workers, and API integrations to improve system communication and efficiency.\n\n" +
-      "Databases – Worked with EF Core and SQL Server, managing data models and optimizing database interactions for reliability and performance.\n\n" +
-      "Deployment – Created an MSI installer to simplify application deployment on client computers.\n\n" +
-      "Testing & Quality – Applied unit testing with xUnit to maintain high code quality, performance, and reliability.\n\n" +
-      "Documentation - Wrote a detailed installation and user manual to guide clients through deploying and using the solution effectively.",
+      "Developed multiple web solutions with Blazor, delivering responsive, high-performance user interfaces connected to APIs and databases.\n\n" +
+      "Built a cross-platform mobile app using .NET MAUI, ensuring smooth performance and a consistent user experience.\n\n" +
+      "Designed and implemented Web APIs, background workers, and API integrations to improve system communication and efficiency.\n\n" +
+      "Worked with EF Core and SQL Server, managing data models and optimizing database interactions for reliability and performance.\n\n" +
+      "Created an MSI installer to simplify application deployment on client computers.\n\n" +
+      "Applied unit testing with xUnit to maintain high code quality, performance, and reliability.\n\n" +
+      "Wrote a detailed installation and user manual documentation to guide clients through deploying and using the solution effectively.",
   },
   {
     id: "2",
