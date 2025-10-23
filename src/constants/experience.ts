@@ -11,7 +11,7 @@ export const jobs = [
       "Worked with EF Core and SQL Server, managing data models and optimizing database interactions for reliability and performance.\n\n" +
       "Created an MSI installer to simplify application deployment on client computers.\n\n" +
       "Applied unit testing with xUnit to maintain high code quality, performance, and reliability.\n\n" +
-      "Wrote a detailed installation and user manual documentation to guide clients through deploying and using the solution effectively.",
+      "Wrote a detailed installation and usage manual so clients can install the solution on their machine and learn how to use it.",
   },
   {
     id: "2",
@@ -22,7 +22,7 @@ export const jobs = [
       "Developed an initial integration add-on between two enterprise software systems using C#, .NET Core, EF Core, and SQL Server.\n\n" +
       "Implemented API integrations and background workers to enable reliable and automated data synchronization between platforms.\n\n" +
       "Conducted end-to-end (E2E) testing to ensure the accuracy, performance, and stability of the integration.\n\n" +
-      "Additionally, created a detailed installation and user manual to guide clients through deploying and using the add-on effectively.",
+      "Additionally, created a detailed installation and usage manual so clients can install and use the add-on effectively.",
   },
   {
     id: "3",
