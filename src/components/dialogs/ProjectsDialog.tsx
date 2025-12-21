@@ -1,24 +1,37 @@
 import { createElement } from "react";
-import { useNavigate } from "react-router-dom";
-import { projects } from "../constants/projects";
+import { projects } from "../../constants/projects";
+import { IProjectsDialogProps } from "../../types/projectDialog";
 
-export default function Projects() {
-  const navigate = useNavigate();
+export default function ProjectsDialog({
+  open,
+  onClose,
+}: IProjectsDialogProps) {
+  if (!open) return null;
 
   return (
-    <div className="mt-16">
+    <div className="fixed inset-0 z-50 flex items-center justify-center">
       <div
-        className="bg-white dark:bg-gray-900 py-12 text-gray-800 dark:text-gray-300"
-        id="projects"
-      >
-        <div className="text-center mb-8">
+        className="absolute inset-0 bg-black/60 backdrop-blur-sm"
+        onClick={onClose}
+      />
+
+      <div className="relative bg-white dark:bg-gray-900 w-[95%] max-w-7xl max-h-[90vh] overflow-y-auto rounded-xl shadow-2xl p-6 scroll-smooth">
+        <div className="flex justify-between items-center mb-8">
           <h2 className="text-4xl font-bold text-blue-700 dark:text-purple-500">
             Main Projects
           </h2>
-          <hr className="border-t-2 border-blue-700 dark:border-purple-500 w-24 mx-auto mt-3" />
+          <button
+            onClick={onClose}
+            className="text-3xl text-gray-600 dark:text-gray-300 hover:text-red-500"
+            aria-label="Close dialog"
+          >
+            ×
+          </button>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 px-4 md:px-8">
+        <hr className="border-t-2 border-blue-700 dark:border-purple-500 w-24 mb-10" />
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
             <div
               key={index}
@@ -32,12 +45,14 @@ export default function Projects() {
 
               <div className="p-6 flex flex-col justify-between">
                 <div className="flex-grow">
-                  <h2 className="text-2xl font-bold text-gray-800 dark:text-gray-100 mb-3">
+                  <h3 className="text-2xl font-bold text-gray-800 dark:text-gray-100 mb-3">
                     {project.title}
-                  </h2>
+                  </h3>
+
                   <p className="text-gray-700 dark:text-gray-400 mb-4 text-lg leading-relaxed">
                     {project.description}
                   </p>
+
                   <div className="flex gap-4 mb-4">
                     {project.techStack.map((tech, idx) => (
                       <span
@@ -49,6 +64,7 @@ export default function Projects() {
                     ))}
                   </div>
                 </div>
+
                 <div className="mt-auto pt-4">
                   {project.sourceLinks.map((link, idx) => (
                     <a
@@ -67,14 +83,6 @@ export default function Projects() {
               </div>
             </div>
           ))}
-        </div>
-        <div className="flex justify-center mt-12">
-          <button
-            className="bg-blue-500 dark:bg-purple-400 text-white rounded-full w-14 h-14 flex items-center justify-center shadow-lg transition-transform transform hover:scale-110 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:focus:ring-purple-500 cursor-pointer"
-            onClick={() => navigate("/")}
-          >
-            <span className="text-2xl">🏠</span>
-          </button>
         </div>
       </div>
     </div>

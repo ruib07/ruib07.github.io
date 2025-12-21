@@ -4,7 +4,6 @@ import ScrollToTop from "./components/common/ScrollToTopButton";
 import Footer from "./layouts/Footer";
 import Header from "./layouts/Header";
 import Home from "./pages/Home";
-import Projects from "./pages/Projects";
 
 export default function App() {
   return (
@@ -14,7 +13,6 @@ export default function App() {
       <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/Projects" element={<Projects />} />
       </Routes>
       <Footer />
     </Router>
