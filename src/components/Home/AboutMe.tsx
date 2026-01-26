@@ -9,12 +9,9 @@ export default function AboutMe() {
 
   return (
     <>
-      <div
-        className="bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-300 py-16 px-4 md:px-8 lg:px-16"
-        id="start"
-      >
+      <div className="py-16 px-4 md:px-8 lg:px-16" id="start">
         <div className="flex flex-col md:flex-row items-center justify-center gap-8 mb-12">
-          <div className="w-40 h-40 rounded-full overflow-hidden border-4 border-blue-200 dark:border-gray-700 shadow-lg">
+          <div className="w-40 h-40 rounded-full overflow-hidden border-4 border-slate-200 dark:border-gray-700 shadow-xl">
             <img
               src={MyPicture}
               alt="MyPicture"
@@ -23,18 +20,18 @@ export default function AboutMe() {
           </div>
 
           <div className="text-center md:text-left">
-            <p className="text-lg text-gray-700 dark:text-gray-400">
+            <p className="text-lg text-slate-600 dark:text-gray-400">
               A passionate Developer who <br />
-              <span className="text-blue-500 dark:text-purple-400 font-semibold">
+              <span className="text-indigo-600 dark:text-purple-400 font-bold tracking-tight">
                 turns ideas into code, one line at a time.
               </span>
             </p>
 
-            <div className="flex justify-center gap-6 mt-6">
+            <div className="flex justify-center md:justify-start gap-6 mt-6">
               {skillsData.map((skill, index) => (
                 <div
                   key={index}
-                  className="text-4xl text-gray-800 dark:text-gray-400"
+                  className="text-4xl text-slate-700 dark:text-gray-400 hover:text-indigo-600 dark:hover:text-purple-400 transition-colors"
                 >
                   {createElement(skill.src)}
                 </div>
@@ -44,9 +41,9 @@ export default function AboutMe() {
         </div>
 
         <div className="text-center">
-          <h1 className="text-2xl font-semibold text-gray-800 dark:text-gray-100 mb-4">
+          <h1 className="text-2xl font-bold text-slate-800 dark:text-gray-100 mb-4">
             Currently a{" "}
-            <span className="text-blue-500 dark:text-purple-400">
+            <span className="text-indigo-600 dark:text-purple-400">
               <TypeAnimation
                 sequence={["Software Developer", 1000]}
                 wrapper="span"
@@ -57,7 +54,7 @@ export default function AboutMe() {
             </span>
           </h1>
 
-          <p className="text-gray-600 dark:text-gray-400 max-w-xl mx-auto leading-relaxed text-justify">
+          <p className="text-slate-600 dark:text-gray-400 max-w-xl mx-auto leading-relaxed text-justify">
             As a dedicated Software Developer, I am driven by a relentless
             curiosity for new programming languages and technologies.
             <br />
@@ -67,15 +64,18 @@ export default function AboutMe() {
             drive innovation.
             <br />
             <br />
-            Currently, I’m making an internship at Cegid Primavera as a
-            Technical Consultant, where I’m expanding my skills and gaining
-            valuable real-world experience in the field.
+            Currently, I’m working at{" "}
+            <span className="font-semibold text-slate-800 dark:text-gray-200">
+              Cegid Primavera
+            </span>{" "}
+            as a Junior Technical Consultant, where I’m expanding my skills and
+            gaining valuable real-world experience.
           </p>
 
-          <div className="text-center mt-8">
+          <div className="text-center mt-10">
             <button
               onClick={() => setProjectsOpen(true)}
-              className="bg-blue-500 dark:bg-purple-500 text-white px-6 py-3 rounded-lg text-lg font-semibold shadow-md hover:bg-blue-700 dark:hover:bg-purple-600 transition-transform transform hover:scale-105"
+              className="bg-indigo-600 dark:bg-purple-500 text-white px-8 py-3 rounded-lg cursor-pointer text-lg font-bold shadow-lg shadow-indigo-200 dark:shadow-none hover:bg-indigo-700 dark:hover:bg-purple-600 transition-all transform hover:-translate-y-1"
             >
               See My Projects
             </button>

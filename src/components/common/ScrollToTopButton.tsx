@@ -21,7 +21,7 @@ export default function ScrollToTop() {
 
   return (
     <div
-      className={`fixed bottom-8 right-8 bg-blue-500 text-white dark:bg-purple-400 hover:bg-blue-600 dark:hover:bg-purple-500 rounded-full w-12 h-12 flex items-center justify-center shadow-lg transition-opacity duration-400 ease-in-out ${
+      className={`fixed bottom-8 right-8 bg-indigo-600 text-white dark:bg-purple-400 hover:bg-indigo-700 dark:hover:bg-purple-500 rounded-full w-12 h-12 flex items-center justify-center shadow-lg transition-opacity duration-400 ease-in-out ${
         windowScrolled ? "opacity-100" : "opacity-0 invisible"
       } sm:block hidden`}
       style={{ zIndex: 50 }}
