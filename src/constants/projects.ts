@@ -1,9 +1,9 @@
-import CreativeHubImg from "/assets/ProjectsImgs/CreativeHub.jpg";
-import SkillSwapImg from "/assets/ProjectsImgs/SkillSwap.jpg";
-import StockFlowImg from "/assets/ProjectsImgs/StockFlow.jpg";
-import TaskQuestImg from "/assets/ProjectsImgs/TaskQuest.jpg";
-import TheKnifeImg from "/assets/ProjectsImgs/TheKnife.jpeg";
-import TodoAppImg from "/assets/ProjectsImgs/ToDo.jpeg";
+import CreativeHubImg from "/assets/ProjectsImgs/CreativeHub.webp";
+import SkillSwapImg from "/assets/ProjectsImgs/SkillSwap.webp";
+import StockFlowImg from "/assets/ProjectsImgs/StockFlow.webp";
+import TaskQuestImg from "/assets/ProjectsImgs/TaskQuest.webp";
+import TheKnifeImg from "/assets/ProjectsImgs/TheKnife.webp";
+import TodoAppImg from "/assets/ProjectsImgs/ToDo.webp";
 import WeatherAppImg from "/assets/ProjectsImgs/WeatherApp.webp";
 
 import { AiOutlineDotNet } from "react-icons/ai";

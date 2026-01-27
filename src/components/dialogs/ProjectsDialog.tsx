@@ -30,13 +30,12 @@ const ProjectCard = memo(({ project }: IProjectCardProps) => {
           </p>
 
           <div className="flex flex-wrap gap-3 mb-4">
-            {project.techStack.map((tech: ElementType, idx: number) => (
+            {project.techStack.map((TechIcon, idx) => (
               <span
                 key={idx}
                 className="text-2xl text-slate-500 dark:text-gray-400 hover:text-indigo-600 dark:hover:text-purple-400 transition-colors"
-                title="Technology used"
               >
-                {createElement(tech)}
+                <TechIcon />
               </span>
             ))}
           </div>

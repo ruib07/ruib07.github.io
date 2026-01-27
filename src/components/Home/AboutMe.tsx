@@ -1,8 +1,9 @@
-import { createElement, useState } from "react";
+import { createElement, lazy, useState } from "react";
 import { TypeAnimation } from "react-type-animation";
 import { skillsData } from "../../constants/skills";
-import ProjectsDialog from "../dialogs/ProjectsDialog";
-import MyPicture from "/assets/myphoto.jpeg";
+import MyPicture from "/assets/myphoto.webp";
+
+const ProjectsDialog = lazy(() => import("../dialogs/ProjectsDialog"));
 
 export default function AboutMe() {
   const [projectsOpen, setProjectsOpen] = useState(false);
@@ -28,14 +29,17 @@ export default function AboutMe() {
             </p>
 
             <div className="flex justify-center md:justify-start gap-6 mt-6">
-              {skillsData.map((skill, index) => (
-                <div
-                  key={index}
-                  className="text-4xl text-slate-700 dark:text-gray-400 hover:text-indigo-600 dark:hover:text-purple-400 transition-colors"
-                >
-                  {createElement(skill.src)}
-                </div>
-              ))}
+              {skillsData.map((skill, index) => {
+                const Icon = skill.src;
+                return (
+                  <div
+                    key={skill.id || index}
+                    className="text-4xl text-slate-700 dark:text-gray-400 hover:text-indigo-600 dark:hover:text-purple-400 transition-colors"
+                  >
+                    <Icon />
+                  </div>
+                );
+              })}
             </div>
           </div>
         </div>
@@ -74,6 +78,7 @@ export default function AboutMe() {
 
           <div className="text-center mt-10">
             <button
+              onMouseEnter={() => import("../dialogs/ProjectsDialog")}
               onClick={() => setProjectsOpen(true)}
               className="bg-indigo-600 dark:bg-purple-500 text-white px-8 py-3 rounded-lg cursor-pointer text-lg font-bold shadow-lg shadow-indigo-200 dark:shadow-none hover:bg-indigo-700 dark:hover:bg-purple-600 transition-all transform hover:-translate-y-1"
             >

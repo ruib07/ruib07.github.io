@@ -4,8 +4,8 @@ import { RiTailwindCssFill } from "react-icons/ri";
 import { SiBlazor } from "react-icons/si";
 
 export const skillsData = [
-  { src: SiBlazor },
-  { src: RiTailwindCssFill },
-  { src: AiOutlineDotNet },
-  { src: DiMsqlServer },
+  { id: 1, src: SiBlazor },
+  { id: 2, src: RiTailwindCssFill },
+  { id: 3, src: AiOutlineDotNet },
+  { id: 4, src: DiMsqlServer },
 ];
