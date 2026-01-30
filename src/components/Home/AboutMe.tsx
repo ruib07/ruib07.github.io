@@ -46,16 +46,13 @@ export default function AboutMe() {
 
         <div className="text-center">
           <h1 className="text-2xl font-bold text-slate-800 dark:text-gray-100 mb-4">
-            Currently a{" "}
-            <span className="text-indigo-600 dark:text-purple-400">
-              <TypeAnimation
-                sequence={["Software Developer", 1000]}
-                wrapper="span"
-                speed={50}
-                style={{ display: "inline-block" }}
-                repeat={Infinity}
-              />
-            </span>
+            <TypeAnimation
+              sequence={["Software Developer", 1000]}
+              wrapper="span"
+              speed={50}
+              style={{ display: "inline-block" }}
+              repeat={Infinity}
+            />
           </h1>
 
           <p className="text-slate-600 dark:text-gray-400 max-w-xl mx-auto leading-relaxed text-justify">
