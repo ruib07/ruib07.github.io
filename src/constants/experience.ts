@@ -38,7 +38,7 @@ export const jobs = [
   {
     id: "4",
     title: ".NET Developer Trainee - Activex",
-    contractType: "Internship",
+    contractType: "Part-Time",
     date: "09/2022 - 11/2022",
     modalDescription:
       "• MVC Architecture: Developed a functional web application to master the ASP.NET MVC pattern, focusing on the separation of concerns and scalable structure.\n\n" +
