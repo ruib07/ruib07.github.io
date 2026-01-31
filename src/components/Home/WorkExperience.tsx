@@ -60,7 +60,7 @@ const JobItem = memo(
               <p className="text-slate-500 dark:text-purple-300/80 font-medium mb-3">
                 {job.date}
               </p>
-              <p className="text-slate-600 dark:text-gray-300 leading-relaxed whitespace-pre-line">
+              <p className="text-slate-600 dark:text-gray-300 leading-relaxed whitespace-pre-line text-justify">
                 {job.modalDescription}
               </p>
             </div>

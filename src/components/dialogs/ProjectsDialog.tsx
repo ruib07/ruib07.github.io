@@ -25,7 +25,7 @@ const ProjectCard = memo(({ project }: IProjectCardProps) => {
             {project.title}
           </h3>
 
-          <p className="text-slate-600 dark:text-gray-400 mb-4 text-sm leading-relaxed line-clamp-4">
+          <p className="text-slate-600 dark:text-gray-400 mb-4 text-sm leading-relaxed line-clamp-4 text-justify">
             {project.description}
           </p>
 
