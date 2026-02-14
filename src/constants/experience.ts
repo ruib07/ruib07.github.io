@@ -6,6 +6,7 @@ export const jobs = [
     date: "02/2026 - Present",
     modalDescription:
       "• Full-Stack Development: I oversee the continuous evolution of web, mobile, and desktop solutions, ensuring a seamless experience across all platforms.\n\n" +
+      "• ERP Modernization: I manage the migration of legacy code and extensions from ERP Primavera V9 to V10, ensuring full compatibility with the latest system architectures.\n\n" +
       "• System Architecture: I design and implement robust APIs, efficient background workers, and scalable database structures from the ground up.\n\n" +
       "• Quality Assurance: I prioritize code integrity by writing comprehensive unit tests that validate business logic and optimize system performance.\n\n" +
       "• Technical Communication: I bridge the gap between complex code and user needs by authoring clear documentation for both clients and fellow developers.",
