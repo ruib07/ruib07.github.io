@@ -76,7 +76,7 @@ export default function ProjectsDialog({
       />
 
       <div
-        className="relative bg-slate-50 dark:bg-gray-900 w-full max-w-7xl max-h-[90vh] 
+        className="relative bg-slate-50 dark:bg-gray-900 w-full max-w-5xl max-h-[70vh] 
                    overflow-y-auto rounded-2xl shadow-2xl p-6 sm:p-10 scroll-smooth border border-slate-200 dark:border-gray-800"
       >
         <div className="flex justify-between items-start mb-8">
