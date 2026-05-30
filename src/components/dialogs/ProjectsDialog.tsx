@@ -75,25 +75,22 @@ export default function ProjectsDialog({
         onClick={onClose}
       />
 
-      <div
-        className="relative bg-slate-50 dark:bg-gray-900 w-full max-w-5xl max-h-[70vh] 
-                   overflow-y-auto rounded-2xl shadow-2xl p-6 sm:p-10 scroll-smooth border border-slate-200 dark:border-gray-800"
-      >
-        <div className="flex justify-between items-start mb-8">
+      <div className="relative bg-slate-50 dark:bg-gray-900 w-full max-w-5xl max-h-[70vh] flex flex-col rounded-2xl shadow-2xl border border-slate-200 dark:border-gray-800 overflow-hidden">
+        <div className="flex justify-between items-center px-6 sm:px-10 py-4 sm:py-5 shrink-0 bg-slate-50 dark:bg-gray-900 z-10 border-b border-slate-200 dark:border-gray-800">
           <div>
-            <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white">
+            <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 dark:text-white">
               Featured Projects
             </h2>
-            <hr className="border-t-4 border-indigo-600 dark:border-purple-500 w-16 mt-3" />
+            <hr className="border-t-4 border-indigo-600 dark:border-purple-500 w-16 mt-2" />
           </div>
 
           <button
             onClick={onClose}
-            className="p-2 rounded-full hover:bg-slate-200 dark:hover:bg-gray-800 text-slate-500 dark:text-gray-400 transition-colors"
+            className="p-2 -mr-2 rounded-full hover:bg-slate-200 dark:hover:bg-gray-800 text-slate-500 dark:text-gray-400 transition-colors"
             aria-label="Close dialog"
           >
             <svg
-              className="w-8 h-8"
+              className="w-7 h-7"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
@@ -108,10 +105,12 @@ export default function ProjectsDialog({
           </button>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {projects.map((project: IProject, index: number) => (
-            <ProjectCard key={index} project={project} />
-          ))}
+        <div className="p-6 sm:p-10 overflow-y-auto scroll-smooth">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {projects.map((project: IProject, index: number) => (
+              <ProjectCard key={index} project={project} />
+            ))}
+          </div>
         </div>
       </div>
     </div>
