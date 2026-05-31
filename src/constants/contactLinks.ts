@@ -2,7 +2,7 @@ import { FaEnvelope, FaGithub, FaLinkedin } from "react-icons/fa";
 
 export const contactLinks = [
   {
-    href: "https://www.linkedin.com/in/rui-barreto-814071248/",
+    href: "https://www.linkedin.com/in/rui-b-814071248/",
     label: "LinkedIn",
     icon: FaLinkedin,
     colorClass: "text-indigo-600 dark:text-purple-400",
