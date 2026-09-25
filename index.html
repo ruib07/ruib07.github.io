@@ -2,13 +2,22 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" href="/portfolio.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="description" content="Rui Barreto - Software Developer portfolio featuring projects, work experience and skills." />
+    <meta name="theme-color" content="#f5f0e8" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#181818" media="(prefers-color-scheme: dark)" />
+    <link rel="icon" href="/portfolio.svg" />
     <title>Rui Barreto Portfolio</title>
-    <script type="module" crossorigin src="/assets/index-D0G-OIMw.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-qF3pHWGt.css">
+    <script>
+      (function () {
+        var theme = localStorage.getItem("theme");
+        if (theme === "dark") document.documentElement.classList.add("dark");
+      })();
+    </script>
+    <script type="module" crossorigin src="/assets/index-Ch7L7gWb.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-DTUdwMlq.css">
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root"></div>
   </body>
 </html>
