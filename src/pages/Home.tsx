@@ -4,7 +4,7 @@ import WorkExperience from "../components/Home/WorkExperience";
 
 export default function Home() {
   return (
-    <div className={"mt-16 bg-slate-50 dark:bg-gray-900"}>
+    <div className="mt-20 bg-background text-text transition-colors duration-300 overflow-x-hidden">
       <AboutMe />
       <WorkExperience />
       <Contact />

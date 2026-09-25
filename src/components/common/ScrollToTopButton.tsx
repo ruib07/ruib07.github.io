@@ -21,14 +21,38 @@ export default function ScrollToTop() {
 
   return (
     <div
-      className={`fixed bottom-8 right-8 bg-indigo-600 text-white dark:bg-purple-400 hover:bg-indigo-700 dark:hover:bg-purple-500 rounded-full w-12 h-12 flex items-center justify-center shadow-lg transition-opacity duration-400 ease-in-out ${
-        windowScrolled ? "opacity-100" : "opacity-0 invisible"
-      } sm:block hidden`}
+      className={`
+        fixed bottom-8 right-8
+        bg-button
+        text-background dark:text-text
+        hover:bg-text
+        hover:text-background
+        rounded-full
+        w-12 h-12
+        flex items-center justify-center
+        shadow-lg
+        transition-all duration-300
+        ease-in-out
+        hover:-translate-y-1
+        ${
+          windowScrolled
+            ? "opacity-100"
+            : "opacity-0 invisible"
+        }
+        sm:block hidden
+      `}
       style={{ zIndex: 50 }}
     >
       <button
         onClick={scrollToTop}
-        className="flex items-center justify-center w-full h-full bg-transparent border-none cursor-pointer focus:outline-none"
+        className="
+          flex items-center justify-center
+          w-full h-full
+          bg-transparent
+          border-none
+          cursor-pointer
+          focus:outline-none
+        "
         aria-label="Scroll to top"
       >
         <span className="text-xl">↑</span>

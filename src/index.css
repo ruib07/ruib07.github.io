@@ -2,6 +2,47 @@
 
 @custom-variant dark (&:where(.dark, .dark *));
 
+@theme {
+  --color-background: var(--background);
+  --color-surface: var(--surface);
+  --color-text: var(--text);
+  --color-text-secondary: var(--text-secondary);
+  --color-accent: var(--accent);
+  --color-button: var(--button);
+}
+
+:root {
+  --background: #f5f0e8;
+  --surface: #eae1d3;
+  --text: #2c2723;
+  --text-secondary: #6b6259;
+  --accent: #8b6f47;
+  --button: #2c2723;
+  color-scheme: light;
+}
+
+.dark {
+  --background: #181818;
+  --surface: #222222;
+  --text: #f1eee8;
+  --text-secondary: #a8a39b;
+  --accent: #d0cbc2;
+  --button: #050505;
+  color-scheme: dark;
+}
+
 html {
   scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  overflow-x: hidden;
+  -webkit-tap-highlight-color: transparent;
+}
+
+#start,
+#experience,
+#contact {
+  scroll-margin-top: 5rem;
 }
